@@ -339,16 +339,16 @@ export const DATA = {
       image: "/certifications/javascript.png",
     },
     {
-      title: "Postman APIs",
-      issuer: "Postman",
-      date: "June 2025",
-      image: "/certifications/Postman-api.png",
-    },
-    {
       title: "Full stack web development",
       issuer: "GeekforGeeks",
       date: "June 2025",
       image: "/certifications/web dev.png",
+    },
+    {
+      title: "Postman APIs",
+      issuer: "Postman",
+      date: "June 2025",
+      image: "/certifications/Postman-api.png",
     },
   ],
 
