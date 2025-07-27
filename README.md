@@ -38,5 +38,4 @@ Check out the live version: [https://yourdomain.com](https://yourdomain.com)
 
 ---
 
-## 🧱 Folder Structure
 
