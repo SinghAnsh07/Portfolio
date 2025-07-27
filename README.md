@@ -4,7 +4,7 @@ A minimalist and modern developer portfolio built using **Next.js 14**, **React*
 
 ## 🌐 Live Preview
 
-Check out the live version: [https://yourdomain.com](https://yourdomain.com)
+Check out the live version: [https://portfolio-ansh-singh.vercel.app](https://portfolio-ansh-singh.vercel.app/)
 
 ---
 
