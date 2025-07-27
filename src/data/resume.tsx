@@ -34,12 +34,13 @@ export const DATA = {
     "C",
     "Java",
     "C++",
-    "Python"
+    "Python",
+    "ReactBits"
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
     { href: "/blog", icon: NotebookIcon, label: "Blog" },
-    // { href: "/CV_ANSH_SINGH.pdf", icon: FileText, label: "Resume", external: true }
+    { href: "/CV_ANSH_SINGH.pdf", icon: FileText, label: "Resume", external: true }
 
   ],
   contact: {
@@ -144,6 +145,8 @@ export const DATA = {
         "Cloudinary",
         "Stripe",
         "JWT Auth",
+        "Bycript.js",
+        "Nodemailer"
       ],
       links: [
         {
@@ -174,12 +177,14 @@ export const DATA = {
         "Express.js",
         "Node.js",
         "MongoDB",
+        "Mongoose",
         "GSAP & Three.js",
         "Nodemailer",
         "Hugging face api",
         "Cloudinary",
         "JWT Authentication",
         "Bcrypt.js",
+        "Socket.IO"
       ],
       links: [
         // {
