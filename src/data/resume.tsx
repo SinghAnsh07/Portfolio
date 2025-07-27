@@ -24,8 +24,13 @@ export const DATA = {
     "Express.js",
     "R",
     "Postman",
+    "git",
+    "github",
+    "figma",
+    "machine Learning",
     "Docker",
     "Kubernetes",
+    "jenkins",
     "C",
     "Java",
     "C++",
@@ -34,7 +39,7 @@ export const DATA = {
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
     { href: "/blog", icon: NotebookIcon, label: "Blog" },
-    { href: "/CV_ANSH_SINGH.pdf", icon: FileText, label: "Resume", external: true }
+    // { href: "/CV_ANSH_SINGH.pdf", icon: FileText, label: "Resume", external: true }
 
   ],
   contact: {
@@ -134,6 +139,7 @@ export const DATA = {
         "Node.js",
         "Express.js",
         "MongoDB",
+        "Shadcn UI",
         "Mongoose",
         "Cloudinary",
         "Stripe",
@@ -156,8 +162,44 @@ export const DATA = {
         "",
     },
     {
+      title: "Medi Connect",
+      href: "https://github.com/SinghAnsh07/medi-connect",
+      dates: "June 2025 - Ongoing",
+      active: true,
+      description:
+        "MediConnect redefines digital healthcare by bridging the gap between patients and medical professionals through a smart, telemedicine-first approach. With a focus on reducing in-person hospital visits and long waiting lines, it enables remote consultations, appointment bookings, and streamlined in-hospital workflows.",
+      technologies: [
+        "Tailwind CSS",
+        "React.js (Vite)",
+        "Express.js",
+        "Node.js",
+        "MongoDB",
+        "GSAP & Three.js",
+        "Nodemailer",
+        "Hugging face api",
+        "Cloudinary",
+        "JWT Authentication",
+        "Bcrypt.js",
+      ],
+      links: [
+        // {
+        //   type: "Website",
+        //   href: "https://meta-vote-anshsingh.vercel.app/",
+        //   icon: <Icons.globe className="size-3" />,
+        // },
+        {
+          type: "Source",
+          href: "https://github.com/SinghAnsh07/medi-connect",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/mediconnect.png",
+      video:
+        "",
+    },
+    {
       title: "MetaVote",
-      href: "https://chatcollect.com",
+      href: "https://meta-vote-anshsingh.vercel.app/",
       dates: "feb 2025 - April 2025",
       active: true,
       description:
@@ -300,7 +342,7 @@ export const DATA = {
       title: "Postman APIs",
       issuer: "Postman",
       date: "June 2025",
-      image: "/certifications/Postman.png",
+      image: "/certifications/Postman-api.png",
     },
     {
       title: "Full stack web development",
