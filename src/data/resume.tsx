@@ -353,7 +353,7 @@ export const DATA = {
       title: "Postman APIs",
       issuer: "Postman",
       date: "June 2025",
-      image: "/certifications/Postmanapi.png",
+      image: "/certifications/postmanapi.png",
     },
   ],
 
