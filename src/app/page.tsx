@@ -14,6 +14,7 @@ import DotGrid from "@/components/magicui/DotGrid";
 import Particles from '@/components/magicui/Particles';
 import React, { useEffect, useRef } from "react";
 import { Renderer, Camera, Geometry, Program, Mesh } from "ogl";
+import { useTheme } from "next-themes";
 
 interface ParticlesProps {
   // your props here
@@ -21,55 +22,61 @@ interface ParticlesProps {
 const BLUR_FADE_DELAY = 0.04;
 
 export default function Page() {
+  const { theme } = useTheme();
   return (
     <div style={{ width: "100%", position: "relative", overflow: "hidden" }}>
-  {/* ✅ Particles decorative background */}
-  <div
-    style={{
-      position: 'fixed',
-      top: 0,
-      left: 0,
-      width: '100vw',
-      height: '100vh',
-      zIndex: -1, // Keep it behind all content
-      overflow: 'hidden',
-    }}
-  >
-    <Particles
-      particleColors={['#ffffff', '#000000ff']}
-      particleCount={200}
-      particleSpread={10}
-      speed={0.1}
-      particleBaseSize={100}
-      moveParticlesOnHover={true}
-      alphaParticles={false}
-      disableRotation={false}
-    />
-  </div>
-  <div
-  style={{
-    position: 'fixed',
-    top: 0,
-    left: 0,
-    width: '100vw',
-    height: '100vh',
-    zIndex: -1, // Put it behind all content
-    overflow: 'hidden',
-  }}
->
-  <DotGrid
-    dotSize={4}
-    gap={10}
-    baseColor="#000000ff"
-    activeColor="#ffb7ce"
-    proximity={120}
-    shockRadius={250}
-    shockStrength={5}
-    resistance={750}
-    returnDuration={1.5}
-  />
-</div>
+      {/* Particles Background */}
+      <div
+        style={{
+          position: 'fixed',
+          top: 0,
+          left: 0,
+          width: '100vw',
+          height: '100vh',
+          zIndex: -1,
+          overflow: 'hidden',
+        }}
+      >
+        <Particles
+          particleColors={
+            theme === "dark" 
+              ? ['#ffffff', '#8888ff']  // Softer white + bluish particles for dark
+              : ['#00000033', '#ffffff33'] // Light transparent particles for light
+          }
+          particleCount={200}
+          particleSpread={10}
+          speed={0.1}
+          particleBaseSize={100}
+          moveParticlesOnHover={true}
+          alphaParticles={false}
+          disableRotation={false}
+        />
+      </div>
 
+      {/* DotGrid Background */}
+      <div
+        style={{
+          position: 'fixed',
+          top: 0,
+          left: 0,
+          width: '100vw',
+          height: '100vh',
+          zIndex: -1,
+          overflow: 'hidden',
+        }}
+      >
+        <DotGrid
+          dotSize={3}
+          gap={12} // Keep consistent density across themes
+          baseColor={theme === "dark" ? "#000000" : "#ffffff"} // Background: black in dark, white in light
+          activeColor="#ffb7ce" // Baby pink for both themes
+          proximity={120}
+          shockRadius={250}
+          shockStrength={5}
+          resistance={750}
+          returnDuration={1.5}
+        />
+      </div>
     <main className="flex flex-col min-h-[100dvh] space-y-10">
       <section id="hero">
         <div className="mx-auto w-full max-w-2xl space-y-8">
