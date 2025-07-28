@@ -10,6 +10,7 @@ import { Badge } from "@/components/ui/badge";
 import { DATA } from "@/data/resume";
 import Link from "next/link";
 import Markdown from "react-markdown";
+import DotGrid from "@/components/magicui/DotGrid"; 
 import Particles from '@/components/magicui/Particles';
 import React, { useEffect, useRef } from "react";
 import { Renderer, Camera, Geometry, Program, Mesh } from "ogl";
@@ -45,6 +46,29 @@ export default function Page() {
       disableRotation={false}
     />
   </div>
+  <div
+  style={{
+    position: 'fixed',
+    top: 0,
+    left: 0,
+    width: '100vw',
+    height: '100vh',
+    zIndex: -1, // Put it behind all content
+    overflow: 'hidden',
+  }}
+>
+  <DotGrid
+    dotSize={4}
+    gap={10}
+    baseColor="#000000ff"
+    activeColor="#ffb7ce"
+    proximity={120}
+    shockRadius={250}
+    shockStrength={5}
+    resistance={750}
+    returnDuration={1.5}
+  />
+</div>
 
     <main className="flex flex-col min-h-[100dvh] space-y-10">
       <section id="hero">
