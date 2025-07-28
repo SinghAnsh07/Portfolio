@@ -40,8 +40,7 @@ export const DATA = {
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
     { href: "/blog", icon: NotebookIcon, label: "Blog" },
-    { href: "/CV_ANSH_SINGH.pdf", icon: FileText, label: "Resume", external: true }
-
+    
   ],
   contact: {
     email: "snghansh07@gmail.com",
