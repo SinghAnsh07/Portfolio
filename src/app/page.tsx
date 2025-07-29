@@ -33,7 +33,7 @@ export default function Page() {
           left: 0,
           width: '100vw',
           height: '100vh',
-          zIndex: -1,
+          zIndex: -2,
           overflow: 'hidden',
         }}
       >
@@ -63,6 +63,7 @@ export default function Page() {
           height: '100vh',
           zIndex: -1,
           overflow: 'hidden',
+          pointerEvents: 'none',
         }}
       >
         <DotGrid
@@ -70,13 +71,15 @@ export default function Page() {
           gap={12} // Keep consistent density across themes
           baseColor={theme === "dark" ? "#000000" : "#ffffff"} // Background: black in dark, white in light
           activeColor="#ffb7ce" // Baby pink for both themes
-          proximity={120}
-          shockRadius={250}
+          proximity={70}
+          shockRadius={160}
           shockStrength={5}
           resistance={750}
           returnDuration={1.5}
         />
       </div>
+
+
     <main className="flex flex-col min-h-[100dvh] space-y-10">
       <section id="hero">
         <div className="mx-auto w-full max-w-2xl space-y-8">
