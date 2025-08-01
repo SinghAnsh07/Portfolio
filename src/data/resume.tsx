@@ -337,6 +337,18 @@ export const DATA = {
       image: "/certifications/SQL.png",
     },
     {
+      title: "Ask Questions to Make Data-Driven Decisions",
+      issuer: "Google",
+      date: "feb 2025",
+      image: "/certifications/data driven decisions.png",
+    },
+    {
+      title: "Foundations: Data, Data, Everywhere",
+      issuer: "Google",
+      date: "feb 2025",
+      image: "/certifications/data, data everywhere.png",
+    },
+    {
       title: "Javascript Basic",
       issuer: "GeekforGeeks",
       date: "April 2025",
