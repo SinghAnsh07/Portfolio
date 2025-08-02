@@ -186,11 +186,6 @@ export const DATA = {
         "Socket.IO"
       ],
       links: [
-        // {
-        //   type: "Website",
-        //   href: "https://meta-vote-anshsingh.vercel.app/",
-        //   icon: <Icons.globe className="size-3" />,
-        // },
         {
           type: "Source",
           href: "https://github.com/SinghAnsh07/medi-connect",
