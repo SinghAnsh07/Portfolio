@@ -273,10 +273,10 @@ export default function Page() {
                   Certifications
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                  Some of my Certifications
+                  Some of my Certifications & Achievements
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Here are some of the certifications I’ve earned from various platforms, showcasing my dedication 
+                  Here are some of the certifications and Achievements I’ve earned from various platforms, showcasing my dedication 
                   to continuous learning and growth in tech.
                 </p>
               </div>
