@@ -128,7 +128,7 @@ export const DATA = {
   projects: [
     {
       title: "StudyNotion",
-      href: "https://studynotion-anshsingh.vercel.app/",
+      href: "https://study-notion-ansh-singh.vercel.app/",
       dates: "May 2025 - July 2025",
       active: true,
       description:
@@ -150,12 +150,12 @@ export const DATA = {
       links: [
         {
           type: "Website",
-          href: "https://studynotion-anshsingh.vercel.app/",
+          href: "https://study-notion-ansh-singh.vercel.app/",
           icon: <Icons.globe className="size-3" />,
         },
         {
           type: "Source",
-          href: "https://github.com/SinghAnsh07/SN",
+          href: "https://github.com/SinghAnsh07/StudyNotion-AnshSingh",
           icon: <Icons.github className="size-3" />,
         },
       ],
