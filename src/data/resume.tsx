@@ -27,7 +27,6 @@ export const DATA = {
     "git",
     "github",
     "figma",
-    "machine Learning",
     "Docker",
     "Kubernetes",
     "jenkins",
