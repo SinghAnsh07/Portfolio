@@ -149,11 +149,6 @@ export const DATA = {
       ],
       links: [
         {
-          type: "Website",
-          href: "https://study-notion-ansh-singh.vercel.app/",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
           type: "Source",
           href: "https://github.com/SinghAnsh07/StudyNotion-AnshSingh",
           icon: <Icons.github className="size-3" />,
