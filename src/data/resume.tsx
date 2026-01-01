@@ -57,15 +57,14 @@ export const DATA = {
         name: "LinkedIn",
         url: "https://www.linkedin.com/in/anshsingh07/",
         icon: Icons.linkedin,
-
         navbar: true,
       },
-      X: {
-        name: "Insta",
-        url: "https://x.com/mr_miller07",
-        icon: Icons.x,
-
-        navbar: true,
+      
+      Insta: {
+      name: "Insta",
+      url: "https://www.instagram.com/varakros",
+      icon: Icons.insta,
+      navbar: true,
       },
       Youtube: {
         name: "Youtube",
@@ -127,7 +126,7 @@ export const DATA = {
   projects: [
     {
       title: "StudyNotion",
-      href: "https://study-notion-ansh-singh.vercel.app/",
+      href: "https://github.com/SinghAnsh07/StudyNotion-AnshSingh",
       dates: "May 2025 - July 2025",
       active: true,
       description:
