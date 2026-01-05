@@ -7,7 +7,7 @@ export const DATA = {
   
   name: "Ansh Singh",
   initials: "AS",
-  url: "https://wound.lol/varakros",
+  url: "https://portfolio-ansh-singh.vercel.app/",
   location: "Varanasi, UP, India",
   description:
     "CS Undergrad turned Developer. Passionate about Web Development and DSA. Love building cool stuff and helping others. Active on Discord, exploring tech every day.",
@@ -39,6 +39,7 @@ export const DATA = {
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
     { href: "/blog", icon: NotebookIcon, label: "Blog" },
+    { href: "/CV.pdf", icon: FileText, label: "Resume", external: true }
     
   ],
   contact: {
