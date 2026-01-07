@@ -100,7 +100,11 @@ export default function Page() {
             </div>
             <BlurFade delay={BLUR_FADE_DELAY}>
               <Avatar className="size-28 border">
-                <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
+                <AvatarImage 
+                  alt={DATA.name} 
+                  src={DATA.avatarUrl} 
+                  className="object-cover object-top"
+                />
                 <AvatarFallback>{DATA.initials}</AvatarFallback>
               </Avatar>
             </BlurFade>
@@ -283,23 +287,40 @@ export default function Page() {
             </div>
           </BlurFade>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-            {DATA.certifications.map((cert, idx) => (
-              <BlurFade key={idx} delay={BLUR_FADE_DELAY * 11 + idx * 0.05}>
-                <div className="rounded-2xl overflow-hidden shadow-md border border-border bg-background">
-                  <img
-                    src={cert.image}
-                    alt={cert.title}
-                    className="w-full object-cover h-48"
-                  />
-                  <div className="p-4">
-                    <h3 className="text-md font-semibold">{cert.title}</h3>
-                    <p className="text-sm text-muted-foreground">{cert.issuer}</p>
-                    <p className="text-xs text-muted-foreground">{cert.date}</p>
-                  </div>
-                </div>
-              </BlurFade>
-            ))}
+  {DATA.certifications.map((cert, idx) => (
+    <BlurFade key={idx} delay={BLUR_FADE_DELAY * 11 + idx * 0.05}>
+      
+      <a
+        href={cert.link}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="block"
+      >
+        <div className="rounded-2xl overflow-hidden shadow-md border border-border bg-background hover:shadow-xl transition-all">
+          
+          <img
+            src={cert.image}
+            alt={cert.title}
+            className="w-full object-cover h-48"
+          />
+
+          <div className="p-4 text-center">
+            <h3 className="text-md font-semibold">{cert.title}</h3>
+            <p className="text-sm text-muted-foreground">{cert.issuer}</p>
+            <p className="text-xs text-muted-foreground mb-2">{cert.date}</p>
+
+            <div className="w-full border rounded-2xl p-2 text-sm mt-2">
+              View Certificate
+            </div>
+
           </div>
+
+        </div>
+      </a>
+
+    </BlurFade>
+  ))}
+</div>
         </div>
       </section>
 
