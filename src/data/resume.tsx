@@ -312,48 +312,56 @@ export const DATA = {
       issuer: "IBM",
       date: "July 2025",
       image: "/certifications/DevOps Fundamentals.png",
+      link:"https://courses.vit.skillsnetwork.site/certificates/0227ea759b8a4a0eacdb300371cf4d9b"
     },
     {
       title: "DevOps,Agile and Design Thinking",
       issuer: "IBM",
       date: "July 2025",
       image: "/certifications/DevOps, Agile and Design Thinking.png",
+      link:"https://courses.vit.skillsnetwork.site/certificates/b739a377a46e4400a3275db95a444221"
     },
     {
       title: "Structured Query Language",
       issuer: "University of Colorado Boulder",
       date: "feb 2025",
       image: "/certifications/SQL.png",
+      link:"https://www.coursera.org/account/accomplishments/verify/59XVNT98H9ZV"
     },
     {
       title: "Ask Questions to Make Data-Driven Decisions",
       issuer: "Google",
       date: "feb 2025",
       image: "/certifications/data driven decisions.png",
+      link:"https://www.coursera.org/account/accomplishments/verify/4429I3GTADUY"
     },
     {
       title: "Foundations: Data, Data, Everywhere",
       issuer: "Google",
       date: "feb 2025",
       image: "/certifications/data, data everywhere.png",
+      link:"https://www.coursera.org/account/accomplishments/verify/MI245LCG822H"
     },
     {
       title: "Javascript Basic",
       issuer: "GeekforGeeks",
       date: "April 2025",
       image: "/certifications/javascript.png",
+      link:"https://www.hackerrank.com/certificates/98ae8b2bea20"
     },
     {
       title: "Full stack web development",
       issuer: "GeekforGeeks",
       date: "June 2025",
       image: "/certifications/web dev.png",
+      link:""
     },
     {
       title: "Postman APIs",
       issuer: "Postman",
       date: "June 2025",
       image: "/certifications/postmanapi.png",
+      link:"https://badges.parchment.com/public/assertions/h2axzz0JSnaaPSOYAglYlQ?identity__email=snghansh07@gmail.com"
     },
   ],
 
