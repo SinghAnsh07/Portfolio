@@ -1,6 +1,7 @@
 import { Icons } from "@/components/icons";
-import { HomeIcon, NotebookIcon, FileText, IdCard } from "lucide-react";
+import { HomeIcon, NotebookIcon } from "lucide-react";
 import DotGrid from "@/components/magicui/DotGrid";
+import { FileText } from "lucide-react"
 
 export const DATA = {
   
