@@ -63,7 +63,7 @@ export const DATA = {
       
       Insta: {
       name: "Insta",
-      url: "https://www.instagram.com/varakros",
+      url: "https://www.instagram.com/theblueopium",
       icon: Icons.insta,
       navbar: true,
       },
@@ -83,6 +83,9 @@ export const DATA = {
     },
   },
 
+
+
+
   work: [
     {
       company: "",
@@ -97,6 +100,10 @@ export const DATA = {
         "",
     },
   ],
+
+
+
+
   education: [
     {
       school: "Vellore Institute of Technology, Chennai",
@@ -124,6 +131,12 @@ export const DATA = {
     },
 
   ],
+
+
+
+
+
+
   projects: [
     {
       title: "StudyNotion",
@@ -223,89 +236,69 @@ export const DATA = {
         "",
     },
   ],
+  
+
+
+
+
+
+
   miniprojects: [
     {
-      title: "SwiftShop",
-      dates: "Developed as part of a Web Programming course project.",
-      location: "chennai, India",
+      title: "Crop Disease Prediction",
+      dates: "Sep 2025",
+      location: "Deep Learning · Computer Vision",
       description:
-        " An EdTech platform that enables users to create, manage, and access online courses with authentication, payments, and video content integration.--->Tools Used: HTML, CSS, JavaScript, Vite.js",
-      image:
-        "/swiftshop.png",
+        "Designed a high-accuracy deep learning system to detect crop diseases across multiple plant species using custom CNN architectures and ResNet-50 transfer learning. Implemented data augmentation techniques such as rotation, flipping, and scaling to improve generalization and reduce bias, achieving 96% accuracy with an 8% performance gain over the baseline CNN model.",
+      technologies: [
+        "Python",
+        "TensorFlow",
+        "CNN",
+        "ResNet-50",
+        "Data Augmentation",
+        "Matplotlib",
+      ],
       links: [
         {
-          title: "Website",
-          icon: <Icons.globe className="h-4 w-4" />,
-          href: "https://swiftshop-ansh-singh.vercel.app/",
+          type:"Source",
+          title: "GitHub",
+          icon: <Icons.github className="h-4 w-4" />,
+          href: "https://github.com/SinghAnsh07/plant-disease-prediction",
         }
       ],
+      image: "/crop-disease.png",
     },
     {
-      title: "weather app",
-      dates: "Developed to enhance my skills in JavaScript and React.",
-      location: "chennai, India",
+      title: "Breast Cancer Histopathology Classification",
+      dates: "july 2025",
+      location: "Deep Learning · Computer Vision · Medical AI",
       description:
-        "  ◦ An application to fetch and display weather data for any location using APIs.,---> Tools Used: JavaScript, CSS, Html",
-      image:
-        "/weather.png",
+        "Developed a high-accuracy medical image classification system using Vision Transformer (ViT-Small) models to distinguish benign and malignant breast cancer histopathology images from the BreaKHis dataset. Trained independent models across four magnification levels (40X, 100X, 200X, 400X), incorporating data augmentation and cosine learning rate scheduling. Achieved an average accuracy of 99.24%, demonstrating strong robustness across varying microscopic resolutions.",
+      technologies: [
+        "Python",
+        "PyTorch",
+        "Vision Transformer (ViT)",
+        "Computer Vision",
+        "Transfer Learning",
+        "Data Augmentation",
+        "CUDA",
+        "Google Colab",
+      ],
       links: [
         {
-          title: "Website",
-          icon: <Icons.globe className="h-4 w-4" />,
-          href: "https://weather-app-anshsingh.vercel.app/",
-        },
-        {
-          title: "Github",
+          type: "Source",
+          title: "GitHub",
           icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/SinghAnsh07/weather_app",
-        },
-        
+          href: "https://github.com/SinghAnsh07/Breast-Cancer-Histopathology-Classification",
+        }
       ],
-    },
-    {
-      title: "Tic Tac Toe",
-      dates: "developed to learn the DOM manipulation",
-      location: "Chennai, India",
-      description:
-        "◦ A web-based interactive Tic Tac Toe game for two players with win/draw logic and a clean UI. ---> Tools Used: JavaScript, CSS, HTML",
-      image: "/tictactoe.png",
-      links: [
-        {
-          title: "Website",
-          icon: <Icons.globe className="h-4 w-4" />,
-          href: "https://tic-tac-toe-ansh-singh.vercel.app/",
-        },
-        {
-          title: "Github",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/SinghAnsh07/tic-tac-toe",
-        },
-      ],
-    },
-    {
-      title: "Calculator App",
-      dates: "Developed to improve my skills in JavaScript",
-      location: "Chennai, India",
-      description:
-        "◦ A responsive calculator web application capable of performing basic arithmetic operations with real-time result updates. ---> Tools Used: JavaScript, CSS, HTML",
-      image: "/calculator.png",
-      links: [
-        {
-          title: "Website",
-          icon: <Icons.globe className="h-4 w-4" />,
-          href: "https://calculator-anshsingh.vercel.app/",
-        },
-        {
-          title: "Github",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/SinghAnsh07/calculator-app",
-        },
-      ],
+      image: "/breast-cancer.png",
     }
-
-
-    
   ],
+
+
+
+
   certifications: [
     {
       title: "DevOps Fundamentals",

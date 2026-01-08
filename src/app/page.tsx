@@ -226,46 +226,47 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <section id="hackathons">
+      <section id="miniprojects">
         <div className="space-y-12 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 13}>
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
-                  Mini Projects
-                </div>
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                  I like building things
-                </h2>
-                <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  During my time in university, I built {DATA.projects.length}+ mini projects. 
-                  These projects allowed me to experiment with new technologies, apply 
-                  theoretical knowledge, and solve real-world problems in creative ways. 
-                  Each build was a stepping stone, helping me grow as a developer and explore 
-                  the endless possibilities that code can bring to life.
-                </p>
-              </div>
+                  <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
+                    Data Science Projects
+                  </div>
+
+                  <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+                    Turning data into insights
+                  </h2>
+
+                  <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                    During my academic journey, I worked on various data science projects. 
+                    These projects involved data analysis, visualization, and machine learning, helping 
+                    me extract insights from real-world datasets and build data-driven solutions.
+                  </p>
+                </div>  
             </div>
           </BlurFade>
-          <BlurFade delay={BLUR_FADE_DELAY * 14}>
-            <ul className="mb-4 ml-4 divide-y divide-dashed border-l">
-              {DATA.miniprojects.map((project, id) => (
-                <BlurFade
-                  key={project.title + project.dates}
-                  delay={BLUR_FADE_DELAY * 15 + id * 0.05}
-                >
-                  <HackathonCard
-                    title={project.title}
-                    description={project.description}
-                    location={project.location}
-                    dates={project.dates}
-                    image={project.image}
-                    links={project.links}
-                  />
-                </BlurFade>
-              ))}
-            </ul>
-          </BlurFade>
+          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-[800px] mx-auto">
+            {DATA.miniprojects.map((project, id) => (
+              <BlurFade
+                key={project.title}
+                delay={BLUR_FADE_DELAY * 14 + id * 0.05}
+              >
+                <ProjectCard
+                  href={project.links?.[0]?.href || "#"}
+                  key={project.title}
+                  title={project.title}
+                  description={project.description}
+                  dates={project.dates}
+                  tags={project.technologies}
+                  image={project.image}
+                  video=""
+                  links={project.links}
+                />
+              </BlurFade>
+            ))}
+          </div>
         </div>
       </section>
       <section id="projects">
