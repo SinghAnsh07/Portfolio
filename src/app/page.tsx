@@ -67,11 +67,11 @@ export default function Page() {
         }}
       >
         <DotGrid
-          dotSize={3}
-          gap={12} // Keep consistent density across themes
+          dotSize={2}
+          gap={10} // Keep consistent density across themes
           baseColor={theme === "dark" ? "#000000" : "#ffffff"} // Background: black in dark, white in light
           activeColor="#ffb7ce" // Baby pink for both themes
-          proximity={70}
+          proximity={80}
           shockRadius={160}
           shockStrength={5}
           resistance={750}
