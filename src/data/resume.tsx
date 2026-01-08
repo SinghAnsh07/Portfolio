@@ -1,7 +1,6 @@
 import { Icons } from "@/components/icons";
-import { HomeIcon, NotebookIcon } from "lucide-react";
+import { HomeIcon, NotebookIcon, FileText, IdCard } from "lucide-react";
 import DotGrid from "@/components/magicui/DotGrid";
-import { FileText } from "lucide-react"
 
 export const DATA = {
   
@@ -34,12 +33,19 @@ export const DATA = {
     "Java",
     "C++",
     "Python",
-    "ReactBits"
+    "ReactBits",
+    "NumPy",
+    "Pandas",
+    "Matplotlib",
+    "TensorFlow (Basic)",
+    "OpenCV",
+    "CNNs"
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
     { href: "/blog", icon: NotebookIcon, label: "Blog" },
-    { href: "/CV.pdf", icon: FileText, label: "Resume", external: true }
+    { href: "/CV.pdf", icon: FileText, label: "Resume", external: true },
+    { href: "/ansh_DS.pdf", icon: FileText, label: "Data science resume", external: true }
     
   ],
   contact: {
