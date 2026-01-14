@@ -4,7 +4,7 @@ import DotGrid from "@/components/magicui/DotGrid";
 import { FileText } from "lucide-react"
 
 export const DATA = {
-  
+
   name: "Ansh Singh",
   initials: "AS",
   url: "https://portfolio-ansh-singh.vercel.app/",
@@ -12,9 +12,13 @@ export const DATA = {
   description:
     "CS Undergrad turned Developer. Passionate about Web Development and DSA. Love building cool stuff and helping others. Active on Discord, exploring tech every day.",
   summary:
-    "As a current Computer Science undergrad, I’m deeply focused on building impactful software and growing as a developer. I’ve tackled hundreds of DSA problems on [LeetCode](https://leetcode.com/u/zenansh/), earned a 3⭐ rating on [CodeChef](https://www.codechef.com/users/singhansh07), and showcased my work and journey on [Codolio](https://codolio.com/profile/varakros). I'm passionate about Web Development and love solving real-world problems through code.",
+    "As a Computer Science undergraduate, I’m focused on building impactful software while continuously improving as a developer. I’ve solved hundreds of DSA problems on [LeetCode](https://leetcode.com/u/zenansh/), earned a 3⭐ rating on [CodeChef](https://www.codechef.com/users/singhansh07), and documented my learning journey and projects on [Codolio](https://codolio.com/profile/varakros). I’m particularly passionate about Web Development and enjoy applying problem-solving skills to build practical, real-world solutions.",
   avatarUrl: "/me.png",
   skills: [
+    "C",
+    "Java",
+    "C++",
+    "Python",
     "tailwind CSS",
     "React",
     "Javascript",
@@ -22,7 +26,6 @@ export const DATA = {
     "Node.js",
     "MongoDB",
     "Express.js",
-    "R",
     "Postman",
     "git",
     "github",
@@ -30,10 +33,6 @@ export const DATA = {
     "Docker",
     "Kubernetes",
     "jenkins",
-    "C",
-    "Java",
-    "C++",
-    "Python",
     "ReactBits",
     "NumPy",
     "Pandas",
@@ -47,13 +46,13 @@ export const DATA = {
     { href: "/blog", icon: NotebookIcon, label: "Blog" },
     { href: "/CV.pdf", icon: FileText, label: "Resume", external: true },
     { href: "/ansh_DS.pdf", icon: FileText, label: "Data science resume", external: true }
-    
+
   ],
   contact: {
     email: "snghansh07@gmail.com",
     tel: "+918840916738",
     social: {
-      
+
       GitHub: {
         name: "GitHub",
         url: "https://github.com/SinghAnsh07",
@@ -67,12 +66,12 @@ export const DATA = {
         icon: Icons.linkedin,
         navbar: true,
       },
-      
+
       Insta: {
-      name: "Insta",
-      url: "https://www.instagram.com/theblueopium",
-      icon: Icons.insta,
-      navbar: true,
+        name: "Insta",
+        url: "https://www.instagram.com/theblueopium",
+        icon: Icons.insta,
+        navbar: true,
       },
       Youtube: {
         name: "Youtube",
@@ -243,7 +242,7 @@ export const DATA = {
         "",
     },
   ],
-  
+
 
 
 
@@ -267,7 +266,7 @@ export const DATA = {
       ],
       links: [
         {
-          type:"Source",
+          type: "Source",
           title: "GitHub",
           icon: <Icons.github className="h-4 w-4" />,
           href: "https://github.com/SinghAnsh07/plant-disease-prediction",
@@ -303,6 +302,33 @@ export const DATA = {
     }
   ],
 
+  webdevprojects: [
+    {
+      title: "FlutterSprint Hackathon Project",
+      dates: "FlutterSprint Hackathon · Google Developer Club",
+      location: "Chennai, India",
+      description:
+        "Developed a Flutter-based Safe Lending application during the FlutterSprint hackathon by Google Developer Club, aimed at digitizing informal peer-to-peer lending. The app allows users to record loans, track repayments, and maintain transparent transaction histories, promoting trust and accountability. ---> Tools Used: Flutter, Dart, Firebase",
+      image: "/fluttersprint.png",
+      links: [
+        {
+          title: "GitHub",
+          icon: <Icons.github className="h-4 w-4" />,
+          href: "https://github.com/SinghAnsh07/Safe-Lending",
+        },
+      ],
+    },
+    {
+      title: "HackRx 6.0 – Expense & Financial Wellness Dashboard",
+      dates: "HackRx 6.0 Hackathon · Bajaj Finserv",
+      location: "Bengaluru, India",
+      description:
+        "Designed and built a MERN-based web dashboard during HackRx 6.0 focused on personal expense tracking and financial wellness insights. The platform allowed users to log transactions, categorize expenses, visualize spending patterns, and receive basic budgeting insights, simulating real-world consumer finance use cases. ---> Tools Used: MongoDB, Express.js, React.js, Node.js",
+      image: "/hack6.png",
+      links: [],
+    }
+  ],
+
 
 
 
@@ -312,56 +338,56 @@ export const DATA = {
       issuer: "IBM",
       date: "July 2025",
       image: "/certifications/DevOps Fundamentals.png",
-      link:"https://courses.vit.skillsnetwork.site/certificates/0227ea759b8a4a0eacdb300371cf4d9b"
+      link: "https://courses.vit.skillsnetwork.site/certificates/0227ea759b8a4a0eacdb300371cf4d9b"
     },
     {
       title: "DevOps,Agile and Design Thinking",
       issuer: "IBM",
       date: "July 2025",
       image: "/certifications/DevOps, Agile and Design Thinking.png",
-      link:"https://courses.vit.skillsnetwork.site/certificates/b739a377a46e4400a3275db95a444221"
+      link: "https://courses.vit.skillsnetwork.site/certificates/b739a377a46e4400a3275db95a444221"
     },
     {
       title: "Structured Query Language",
       issuer: "University of Colorado Boulder",
       date: "feb 2025",
       image: "/certifications/SQL.png",
-      link:"https://www.coursera.org/account/accomplishments/verify/59XVNT98H9ZV"
+      link: "https://www.coursera.org/account/accomplishments/verify/59XVNT98H9ZV"
     },
     {
       title: "Ask Questions to Make Data-Driven Decisions",
       issuer: "Google",
       date: "feb 2025",
       image: "/certifications/data driven decisions.png",
-      link:"https://www.coursera.org/account/accomplishments/verify/4429I3GTADUY"
+      link: "https://www.coursera.org/account/accomplishments/verify/4429I3GTADUY"
     },
     {
       title: "Foundations: Data, Data, Everywhere",
       issuer: "Google",
       date: "feb 2025",
       image: "/certifications/data, data everywhere.png",
-      link:"https://www.coursera.org/account/accomplishments/verify/MI245LCG822H"
+      link: "https://www.coursera.org/account/accomplishments/verify/MI245LCG822H"
     },
     {
       title: "Javascript Basic",
       issuer: "GeekforGeeks",
       date: "April 2025",
       image: "/certifications/javascript.png",
-      link:"https://www.hackerrank.com/certificates/98ae8b2bea20"
+      link: "https://www.hackerrank.com/certificates/98ae8b2bea20"
     },
     {
       title: "Full stack web development",
       issuer: "GeekforGeeks",
       date: "June 2025",
       image: "/certifications/web dev.png",
-      link:""
+      link: ""
     },
     {
       title: "Postman APIs",
       issuer: "Postman",
       date: "June 2025",
       image: "/certifications/postmanapi.png",
-      link:"https://badges.parchment.com/public/assertions/h2axzz0JSnaaPSOYAglYlQ?identity__email=snghansh07@gmail.com"
+      link: "https://badges.parchment.com/public/assertions/h2axzz0JSnaaPSOYAglYlQ?identity__email=snghansh07@gmail.com"
     },
   ],
 
