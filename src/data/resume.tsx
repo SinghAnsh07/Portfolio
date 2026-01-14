@@ -29,6 +29,7 @@ export const DATA = {
     "Postman",
     "git",
     "github",
+    "vercel",
     "figma",
     "Docker",
     "Kubernetes",
