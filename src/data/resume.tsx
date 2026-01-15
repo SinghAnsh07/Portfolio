@@ -305,11 +305,11 @@ export const DATA = {
 
   webdevprojects: [
     {
-      title: "FlutterSprint Hackathon Project",
+      title: "Safe Lending App",
       dates: "FlutterSprint Hackathon · Google Developer Club",
       location: "Chennai, India",
       description:
-        "Developed a Flutter-based Safe Lending application during the FlutterSprint hackathon by Google Developer Club, aimed at digitizing informal peer-to-peer lending. The app allows users to record loans, track repayments, and maintain transparent transaction histories, promoting trust and accountability. ---> Tools Used: Flutter, Dart, Firebase",
+        "Developed a Flutter-based Safe Lending application during the FlutterSprint hackathon by Google Developer Club, aimed at digitizing informal peer-to-peer lending. The app allows users to record loans, track repayments, and maintain transparent transaction histories, promoting trust and accountability. ---> Tools Used: Flutter, Dart, google Firebase",
       image: "/fluttersprint.png",
       links: [
         {
