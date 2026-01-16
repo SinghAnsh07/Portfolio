@@ -31,9 +31,6 @@ export const DATA = {
     "github",
     "vercel",
     "figma",
-    "Docker",
-    "Kubernetes",
-    "jenkins",
     "ReactBits",
     "NumPy",
     "Pandas",
@@ -45,7 +42,7 @@ export const DATA = {
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
     { href: "/blog", icon: NotebookIcon, label: "Blog" },
-    { href: "/CV.pdf", icon: FileText, label: "Resume", external: true },
+    { href: "/Latest_SDE_CV.pdf", icon: FileText, label: "Resume", external: true },
     { href: "/ansh_DS.pdf", icon: FileText, label: "Data science resume", external: true }
 
   ],
