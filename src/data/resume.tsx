@@ -43,7 +43,7 @@ export const DATA = {
     { href: "/", icon: HomeIcon, label: "Home" },
     { href: "/blog", icon: NotebookIcon, label: "Blog" },
     { href: "/Latest_SDE_CV.pdf", icon: FileText, label: "Resume", external: true },
-    { href: "/ansh_DS.pdf", icon: FileText, label: "Data science resume", external: true }
+    { href: "/Data_science_CV.pdf", icon: FileText, label: "Data science resume", external: true }
 
   ],
   contact: {

@@ -71,14 +71,14 @@ export default function Page() {
         }}
       >
         <Antigravity
-          count={500}
-          magnetRadius={5}
-          ringRadius={5}
+          count={300}
+          magnetRadius={4}
+          ringRadius={3}
           autoAnimate={true}
-          color={theme === "dark" ? "#F4C2C2" : "#660033"} // Baby pink for dark, hot pink for light
+          color={theme === "dark" ? "#F4C2C2" : "#660033"} 
           particleSize={1}
-          waveSpeed={3}
-          waveAmplitude={3}
+          waveSpeed={1}
+          waveAmplitude={1}
           lerpSpeed={0.3}
           pulseSpeed={1}
         />
