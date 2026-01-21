@@ -57,6 +57,7 @@ export default async function BlogPage() {
             </h2>
             <p className="text-muted-foreground text-sm">
               I create my art under the pseudonym J.
+              (it will load in a moment)
             </p>
           </div>
         </BlurFade>
