@@ -41,8 +41,8 @@ export const DATA = {
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
-    { href: "/blog", icon: NotebookIcon, label: "Blog" },
-    { href: "/Latest_SDE_CV.pdf", icon: FileText, label: "Resume", external: true },
+    { href: "/blog", icon: NotebookIcon, label: "Know me" },
+    { href: "/Latest_SDE_CV.pdf", icon: FileText, label: "SDE Resume", external: true },
     { href: "/Data_science_CV.pdf", icon: FileText, label: "Data science resume", external: true }
 
   ],
@@ -306,7 +306,7 @@ export const DATA = {
       dates: "FlutterSprint Hackathon · Google Developer Club",
       location: "Chennai, India",
       description:
-        "Developed a Flutter-based Safe Lending application during the FlutterSprint hackathon by Google Developer Club, aimed at digitizing informal peer-to-peer lending. The app allows users to record loans, track repayments, and maintain transparent transaction histories, promoting trust and accountability. ---> Tools Used: Flutter, Dart, google Firebase",
+        "Built a Flutter-based Safe Lending application during the FlutterSprint Hackathon by Google Developer Club to digitize informal peer-to-peer lending. The app enables users to record loans, track repayments, and maintain transparent transaction histories, fostering trust and accountability. The project was shortlisted among the Top 5 teams out of 200+ participants. ---> Tools Used: Flutter, Dart, Firebase, Firestore SDK, Android SDK, Android Emulator",
       image: "/fluttersprint.png",
       links: [
         {
