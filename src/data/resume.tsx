@@ -41,7 +41,7 @@ export const DATA = {
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
-    { href: "/blog", icon: NotebookIcon, label: "Know me" },
+    { href: "/blog", icon: NotebookIcon, label: "stuff" },
     { href: "/Latest_SDE_CV.pdf", icon: FileText, label: "SDE Resume", external: true },
     { href: "/Data_science_CV.pdf", icon: FileText, label: "Data science resume", external: true }
 
