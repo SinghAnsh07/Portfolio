@@ -97,7 +97,7 @@ const components = {
 
 export function CustomMDX(props: any) {
   return (
-    // @ts-expect-error Async Server Component
+
     <MDXRemote
       {...props}
       components={{ ...components, ...(props.components || {}) }}
