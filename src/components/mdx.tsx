@@ -1,6 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { MDXRemote } from "next-mdx-remote/rsc";
+import AsciiAnimation from "@/components/AsciiAnimation";
+import rehypePrettyCode from "rehype-pretty-code";
+import remarkGfm from "remark-gfm";
 
 function Table({ data }: { data: { headers: string[]; rows: string[][] } }) {
   let headers = data.headers.map((header, index) => (
@@ -78,7 +82,7 @@ function createHeading(level: number) {
   return Heading;
 }
 
-export const globalComponents = {
+const components = {
   h1: createHeading(1),
   h2: createHeading(2),
   h3: createHeading(3),
@@ -88,4 +92,32 @@ export const globalComponents = {
   Image: RoundedImage,
   a: CustomLink,
   Table,
+  AsciiAnimation,
 };
+
+export function CustomMDX(props: any) {
+  return (
+    // @ts-expect-error Async Server Component
+    <MDXRemote
+      {...props}
+      components={{ ...components, ...(props.components || {}) }}
+      options={{
+        mdxOptions: {
+          remarkPlugins: [remarkGfm],
+          rehypePlugins: [
+            [
+              rehypePrettyCode,
+              {
+                theme: {
+                  light: "min-light",
+                  dark: "min-dark",
+                },
+                keepBackground: false,
+              }
+            ]
+          ]
+        }
+      }}
+    />
+  );
+}
