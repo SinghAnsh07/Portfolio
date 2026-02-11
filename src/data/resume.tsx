@@ -1,7 +1,7 @@
 import { Icons } from "@/components/icons";
 import { HomeIcon, NotebookIcon } from "lucide-react";
 import DotGrid from "@/components/magicui/DotGrid";
-import { FileText } from "lucide-react"
+import { FileText, Award } from "lucide-react"
 
 export const DATA = {
 
@@ -12,7 +12,7 @@ export const DATA = {
   description:
     "CS Undergrad turned Developer. Passionate about Web Development and DSA. Love building cool stuff and helping others. Active on Discord, exploring tech every day.",
   summary:
-    "As a Computer Science undergraduate, I’m focused on building impactful software while continuously improving as a developer. I’ve solved hundreds of DSA problems on [LeetCode](https://leetcode.com/u/zenansh/), earned a 3⭐ rating on [CodeChef](https://www.codechef.com/users/singhansh07), and documented my learning journey and projects on [Codolio](https://codolio.com/profile/varakros). I’m particularly passionate about Web Development and enjoy applying problem-solving skills to build practical, real-world solutions.",
+    "As a Computer Science undergraduate, I’m focused on building impactful software while continuously improving as a developer. I’ve solved hundreds of DSA problems on [LeetCode](https://leetcode.com/u/zenansh/), earned a 3⭐ rating on [CodeChef](https://www.codechef.com/users/singhansh07), and documented my learning journey and projects on [Codolio](https://codolio.com/profile/AnshSingh). I’m particularly passionate about Web Development and enjoy applying problem-solving skills to build practical, real-world solutions.",
   avatarUrl: "/me.png",
   skills: [
     "C",
@@ -313,6 +313,11 @@ export const DATA = {
           title: "GitHub",
           icon: <Icons.github className="h-4 w-4" />,
           href: "https://github.com/SinghAnsh07/Safe-Lending",
+        },
+        {
+          title: "Certification",
+          icon: <Award className="h-4 w-4" />,
+          href: "/certifications/fluttersprint_certif.png",
         },
       ],
     },
