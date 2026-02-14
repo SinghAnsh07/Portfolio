@@ -4,6 +4,8 @@ import { useState, useEffect } from "react";
 import BlurFade from "@/components/magicui/blur-fade";
 import ArtGallery from "@/components/art-gallery";
 import { ArtItem } from "@/data/art";
+import { AnimatePresence, motion } from "framer-motion";
+import { X } from "lucide-react";
 
 interface ArtGallerySectionProps {
     artworks: ArtItem[];
@@ -13,6 +15,7 @@ interface ArtGallerySectionProps {
 export default function ArtGallerySection({ artworks, blurFadeDelay }: ArtGallerySectionProps) {
     const [isLoaded, setIsLoaded] = useState(false);
     const [loadedCount, setLoadedCount] = useState(0);
+    const [selectedArt, setSelectedArt] = useState<ArtItem | null>(null);
 
     useEffect(() => {
         // Reset state when artworks change
@@ -72,7 +75,7 @@ export default function ArtGallerySection({ artworks, blurFadeDelay }: ArtGaller
             <BlurFade delay={blurFadeDelay * 4}>
                 <div className="max-w-[1400px] mx-auto">
                     {isLoaded ? (
-                        <ArtGallery artworks={artworks} />
+                        <ArtGallery artworks={artworks} onArtClick={setSelectedArt} />
                     ) : (
                         <div className="flex items-center justify-center min-h-[400px]">
                             <div className="text-center">
@@ -85,6 +88,37 @@ export default function ArtGallerySection({ artworks, blurFadeDelay }: ArtGaller
                     )}
                 </div>
             </BlurFade>
+
+            <AnimatePresence>
+                {selectedArt && (
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        onClick={() => setSelectedArt(null)}
+                        className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4 backdrop-blur-sm"
+                    >
+                        <motion.div
+                            layoutId={selectedArt.id}
+                            className="relative max-h-[90vh] max-w-[90vw] overflow-hidden rounded-lg bg-transparent shadow-2xl"
+                            onClick={(e) => e.stopPropagation()}
+                        >
+                            <button
+                                onClick={() => setSelectedArt(null)}
+                                className="absolute right-4 top-4 z-10 rounded-full bg-black/50 p-2 text-white hover:bg-black/70 transition-colors"
+                            >
+                                <X size={20} />
+                            </button>
+                            <motion.img
+                                src={selectedArt.img}
+                                alt={selectedArt.title || "Artwork"}
+                                className="h-full w-full object-contain max-h-[85vh]"
+                            />
+
+                        </motion.div>
+                    </motion.div>
+                )}
+            </AnimatePresence>
         </section>
     );
 }

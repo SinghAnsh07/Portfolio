@@ -7,7 +7,7 @@ export interface ArtItem {
     description?: string;
 }
 
-// Your amazing artwork collection!
+
 export const artworks: ArtItem[] = [
     {
         id: "snake-girl",
@@ -64,6 +64,14 @@ export const artworks: ArtItem[] = [
         height: 700,
         title: "Flower Vase",
         description: "Beautiful still life composition",
+    },
+    {
+        id: "cyberpunk",
+        img: "/art/cyberpunk.jpeg",
+        url: "/art/cyberpunk.jpeg",
+        height: 650,
+        title: "cyberpunk",
+        description: "distopian male",
     },
     {
         id: "flower-boy",

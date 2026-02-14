@@ -2,6 +2,7 @@
 
 import React, { useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import { gsap } from 'gsap';
+import { motion } from 'framer-motion';
 
 const useMedia = (queries: string[], values: number[], defaultValue: number): number => {
   const get = () => {
@@ -75,6 +76,7 @@ interface MasonryProps {
   hoverScale?: number;
   blurToFocus?: boolean;
   colorShiftOnHover?: boolean;
+  onClick?: (item: Item) => void;
 }
 
 const Masonry: React.FC<MasonryProps> = ({
@@ -86,7 +88,8 @@ const Masonry: React.FC<MasonryProps> = ({
   scaleOnHover = true,
   hoverScale = 0.95,
   blurToFocus = true,
-  colorShiftOnHover = false
+  colorShiftOnHover = false,
+  onClick
 }) => {
   const columns = useMedia(
     ['(min-width:1500px)', '(min-width:1000px)', '(min-width:600px)', '(min-width:400px)'],
@@ -256,12 +259,14 @@ const Masonry: React.FC<MasonryProps> = ({
         <div
           key={item.id}
           data-key={item.id}
-          className="absolute box-content overflow-hidden rounded-2xl shadow-lg transition-shadow duration-300"
+          className="absolute box-content overflow-hidden rounded-2xl shadow-lg transition-shadow duration-300 cursor-pointer"
           style={{ willChange: 'transform, width, height, opacity' }}
           onMouseEnter={e => handleMouseEnter(item.id, e.currentTarget)}
           onMouseLeave={e => handleMouseLeave(item.id, e.currentTarget)}
+          onClick={() => onClick?.(item)}
         >
-          <img
+          <motion.img
+            layoutId={item.id}
             src={item.img}
             alt={`Artwork ${item.id}`}
             className="w-full h-full object-contain bg-background rounded-2xl"
