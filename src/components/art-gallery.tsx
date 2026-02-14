@@ -5,9 +5,10 @@ import { ArtItem } from "@/data/art";
 
 interface ArtGalleryProps {
     artworks: ArtItem[];
+    onArtClick?: (art: ArtItem) => void;
 }
 
-export default function ArtGallery({ artworks }: ArtGalleryProps) {
+export default function ArtGallery({ artworks, onArtClick }: ArtGalleryProps) {
     return (
         <div className="w-full min-h-[800px]">
             <Masonry
@@ -20,6 +21,7 @@ export default function ArtGallery({ artworks }: ArtGalleryProps) {
                 hoverScale={0.98}
                 blurToFocus={true}
                 colorShiftOnHover={false}
+                onClick={onArtClick}
             />
         </div>
     );
