@@ -82,6 +82,14 @@ export const artworks: ArtItem[] = [
         description: "Artistic character portrait with floral elements",
     },
     {
+        id: "Hand of god",
+        img: "/art/hand_of_god.jpeg",
+        url: "/art/hand_of_god.jpeg",
+        height: 650,
+        title: "Hand of god",
+        description: "Atmospheric scene with rainfall",
+    },
+    {
         id: "goat",
         img: "/art/goat.jpg",
         url: "/art/goat.jpg",
