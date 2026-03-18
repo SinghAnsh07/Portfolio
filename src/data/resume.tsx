@@ -92,16 +92,17 @@ export const DATA = {
 
   work: [
     {
-      company: "",
+      company: "AICTE",
       href: "",
-      badges: [],
-      location: "",
-      title: "",
-      logoUrl: "",
-      start: "",
-      end: "",
+      badges: ["Power BI", "DAX", "Power Query"],
+      location: "Remote, India",
+      title: "Power BI Intern",
+      logoUrl: "/certifications/internships/power bi intern.png",
+      start: "Feb 2026",
+      end: "Mar 2026",
       description:
-        "",
+        "Designed and developed interactive dashboards to process and visualize large datasets efficiently. Implemented data transformation pipelines using Power Query, improving data quality and consistency. Utilized DAX functions to build optimized calculated fields and improve report performance. Worked with data modeling techniques (relationships, normalization concepts) to simulate backend data handling. Focused on performance optimization of reports by reducing redundant queries and improving load time.",
+      certificateUrl: "/certifications/internships/power bi intern.png",
     },
   ],
 
