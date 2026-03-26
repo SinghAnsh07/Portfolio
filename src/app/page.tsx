@@ -58,7 +58,7 @@ export default function Page() {
 
 
 
-      {/* Antigravity Background */}
+      {/* Antigravity Background
       <div
         style={{
           position: 'fixed',
@@ -76,19 +76,19 @@ export default function Page() {
           magnetRadius={4}
           ringRadius={3}
           autoAnimate={true}
-          color={theme === "dark" ? "#F4C2C2" : "#660033"} 
+          color={theme === "dark" ? "#F4C2C2" : "#660033"}
           particleSize={1}
           waveSpeed={1}
           waveAmplitude={1}
           lerpSpeed={0.3}
           pulseSpeed={1}
         />
-      </div>
+      </div> */}
 
 
       <main className="flex flex-col min-h-[100dvh] space-y-10">
         <section id="hero">
-          <div className="mx-auto w-full max-w-2xl space-y-8">
+          <div className="mx-auto w-full max-w-4xl space-y-8">
             <div className="gap-2 flex justify-between">
               <div className="flex-col flex flex-1 space-y-1.5">
                 <BlurFadeText
@@ -105,7 +105,7 @@ export default function Page() {
                 />
               </div>
               <BlurFade delay={BLUR_FADE_DELAY}>
-                <Avatar className="size-28 border">
+                <Avatar className="size-40 border">
                   <AvatarImage
                     alt={DATA.name}
                     src={DATA.avatarUrl}
@@ -339,33 +339,26 @@ export default function Page() {
               {DATA.certifications.map((cert, idx) => (
                 <BlurFade key={idx} delay={BLUR_FADE_DELAY * 11 + idx * 0.05}>
 
-                  <a
-                    href={cert.link}
+                  <Link
+                    href={cert.link || "#"}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="block"
+                    className="block rounded-2xl overflow-hidden shadow-md border border-border bg-background hover:shadow-xl transition-all"
                   >
-                    <div className="rounded-2xl overflow-hidden shadow-md border border-border bg-background hover:shadow-xl transition-all">
-
-                      <img
-                        src={cert.image}
-                        alt={cert.title}
-                        className="w-full object-cover h-48"
-                      />
-
-                      <div className="p-4 text-center">
-                        <h3 className="text-md font-semibold">{cert.title}</h3>
-                        <p className="text-sm text-muted-foreground">{cert.issuer}</p>
-                        <p className="text-xs text-muted-foreground mb-2">{cert.date}</p>
-
-                        <div className="w-full border rounded-2xl p-2 text-sm mt-2">
-                          View Certificate
-                        </div>
-
-                      </div>
-
-                    </div>
-                  </a>
+                    <img
+                      src={cert.image}
+                      alt={cert.title}
+                      className="w-full object-cover h-48"
+                    />
+                    <span className="block p-4 text-center">
+                      <h3 className="text-md font-semibold">{cert.title}</h3>
+                      <p className="text-sm text-muted-foreground">{cert.issuer}</p>
+                      <p className="text-xs text-muted-foreground mb-2">{cert.date}</p>
+                      <span className="block w-full border rounded-2xl p-2 text-sm mt-2">
+                        View Certificate
+                      </span>
+                    </span>
+                  </Link>
 
                 </BlurFade>
               ))}
@@ -411,10 +404,10 @@ export default function Page() {
                 <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                   Want to chat? Just shoot me a dm{" "}
                   <Link
-                    href={DATA.contact.social.Insta.url}
-                    className="text-pink-500 hover:underline"
+                    href={DATA.contact.social.LinkedIn.url}
+                    className="text-blue-500 hover:underline"
                   >
-                    with a direct question on Instagram
+                    with a direct question on LinkedIn
                   </Link>{" "}
                   and I&apos;ll respond whenever I can.
                 </p>

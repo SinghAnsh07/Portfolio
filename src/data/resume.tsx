@@ -10,9 +10,9 @@ export const DATA = {
   url: "https://portfolio-ansh-singh.vercel.app/",
   location: "Varanasi, UP, India",
   description:
-    "CS Undergrad turned Developer. Passionate about Web Development and DSA. Love building cool stuff and helping others. Active on Discord, exploring tech every day.",
+    "CS Undergrad turned Developer. Passionate about Web Development and DSA. I Love building cool stuff and helping others. I like reading interesting stuff about tech every day.",
   summary:
-    "As a Computer Science undergraduate, I’m focused on building impactful software while continuously improving as a developer. I’ve solved hundreds of DSA problems on [LeetCode](https://leetcode.com/u/zenansh/), earned a 3⭐ rating on [CodeChef](https://www.codechef.com/users/singhansh07), and documented my learning journey and projects on [Codolio](https://codolio.com/profile/AnshSingh). I’m particularly passionate about Web Development and enjoy applying problem-solving skills to build practical, real-world solutions.",
+    "As a Computer Science undergraduate, I enjoy building practical applications that solve real problems and are simple for users to interact with. I focus on writing clean, efficient code and continuously improving my problem-solving skills through consistent practice. My interest lies in developing reliable web applications and learning by working on real projects. I’ve solved hundreds of DSA problems on [LeetCode](https://leetcode.com/u/zenansh/)",
   avatarUrl: "/me.png",
   skills: [
     "C",
@@ -22,26 +22,30 @@ export const DATA = {
     "tailwind CSS",
     "React",
     "Javascript",
+    "Typescript",
     "Next.js",
     "Node.js",
     "MongoDB",
+    "Supabase",
     "Express.js",
     "Postman",
     "git",
     "github",
-    "vercel",
     "figma",
+    "Power BI",
+    "vercel",
     "ReactBits",
     "NumPy",
     "Pandas",
     "Matplotlib",
     "TensorFlow (Basic)",
     "OpenCV",
-    "CNNs"
+    "CNNs",
+    "System Design"
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
-    { href: "/blog", icon: NotebookIcon, label: "stuff" },
+    { href: "/blog", icon: NotebookIcon, label: "Things I enjoy" },
     { href: "/Latest_SDE_CV.pdf", icon: FileText, label: "SDE Resume", external: true },
     { href: "/Data_science_CV.pdf", icon: FileText, label: "Data science resume", external: true }
 
@@ -65,10 +69,10 @@ export const DATA = {
         navbar: true,
       },
 
-      Insta: {
-        name: "Insta",
-        url: "https://www.instagram.com/theblueopium",
-        icon: Icons.insta,
+      Codolio: {
+        name: "Codolio",
+        url: "https://codolio.com/profile/AnshSingh",
+        icon: Icons.codolio,
         navbar: true,
       },
       Youtube: {
