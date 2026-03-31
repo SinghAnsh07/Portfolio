@@ -41,10 +41,13 @@ export const ResumeCard = ({
   };
 
   return (
-    <Link
-      href={href || "#"}
+    <div
       className="block cursor-pointer"
-      onClick={handleClick}
+      onClick={() => {
+        if (description) {
+          setIsExpanded(!isExpanded);
+        }
+      }}
     >
       <Card className="flex">
         <div className="flex-none">
@@ -118,6 +121,6 @@ export const ResumeCard = ({
           )}
         </div>
       </Card>
-    </Link>
+    </div>
   );
 };
