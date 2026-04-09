@@ -254,6 +254,33 @@ export const DATA = {
 
   miniprojects: [
     {
+      title: "Credit Risk Prediction — Loan Default Probability",
+      dates: "April 2026",
+      location: "Machine Learning · FinTech · MLOps",
+      description:
+        "Built an end-to-end credit risk classification system to predict loan default probability using the UCI Credit Card Default dataset (30,000 samples). Engineered 4 domain-informed financial features, applied SMOTE for class imbalance, and trained an XGBoost pipeline achieving a ROC-AUC of 0.7623 with 79.8% recall on defaults. Deployed a real-time FastAPI inference endpoint with SHAP-based explainability, assigning applicants to Low / Medium / High risk tiers. Generated 9 evaluation reports including calibration curves, threshold analysis, and SHAP beeswarm plots.",
+      technologies: [
+        "Python",
+        "XGBoost",
+        "Scikit-learn",
+        "SHAP",
+        "FastAPI",
+        "SMOTE",
+        "Pandas",
+        "Pydantic",
+      ],
+      links: [
+        {
+          type: "Source",
+          title: "GitHub",
+          icon: <Icons.github className="h-4 w-4" />,
+          href: "https://github.com/SinghAnsh07/credit_risk",
+        },
+      ],
+      image: "/roc_curve.png",
+    },
+
+    {
       title: "Crop Disease Prediction",
       dates: "Sep 2025",
       location: "Deep Learning · Computer Vision",
