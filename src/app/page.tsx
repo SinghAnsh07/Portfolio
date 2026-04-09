@@ -105,17 +105,15 @@ export default function Page() {
                 />
               </div>
               <BlurFade delay={BLUR_FADE_DELAY}>
-                <div className="rounded-full" style={{ padding: '4px', background: 'rgba(200,200,200,0.6)' }}>
-                  <Avatar className="size-40">
-                    <AvatarImage
-                      alt={DATA.name}
-                      src={DATA.avatarUrl}
-                      className="object-cover"
-                      style={{ objectPosition: '50% 10%' }}
-                    />
-                    <AvatarFallback>{DATA.initials}</AvatarFallback>
-                  </Avatar>
-                </div>
+                <Avatar className="size-40 border">
+                  <AvatarImage
+                    alt={DATA.name}
+                    src={theme === "dark" ? "/me black.jpeg" : "/me white.jpeg"}
+                    className="object-cover"
+                    style={{ objectPosition: '50% 10%' }}
+                  />
+                  <AvatarFallback>{DATA.initials}</AvatarFallback>
+                </Avatar>
               </BlurFade>
             </div>
           </div>
