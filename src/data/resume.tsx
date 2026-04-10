@@ -59,7 +59,6 @@ export const DATA = {
         name: "GitHub",
         url: "https://github.com/SinghAnsh07",
         icon: Icons.github,
-
         navbar: true,
       },
       LinkedIn: {
@@ -85,7 +84,6 @@ export const DATA = {
         name: "Send Email",
         url: "#snghansh07@gmail.com",
         icon: Icons.email,
-
         navbar: false,
       },
     },
@@ -265,7 +263,7 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "/fluttersprint.png",
+      image: "/safe-lending.png",
       video: "",
     },
   ],
