@@ -244,6 +244,30 @@ export const DATA = {
       video:
         "",
     },
+    {
+      title: "Safe Lending",
+      href: "https://github.com/SinghAnsh07/Safe-Lending",
+      dates: "Feb 2025 - Mar 2025",
+      active: true,
+      description:
+        "A Flutter-based Safe Lending application built during the FlutterSprint Hackathon by Google Developer Club to digitize informal peer-to-peer lending. Enables users to record loans, track repayments, and maintain transparent transaction histories — fostering trust and accountability. Shortlisted among the Top 5 teams out of 200+ participants.",
+      technologies: [
+        "Flutter",
+        "Dart",
+        "Firebase",
+        "Firestore",
+        "Android SDK",
+      ],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/SinghAnsh07/Safe-Lending",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/fluttersprint.png",
+      video: "",
+    },
   ],
 
 
