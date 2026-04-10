@@ -26,7 +26,7 @@ const BLUR_FADE_DELAY = 0.04;
 export default function Page() {
   const { theme } = useTheme();
   return (
-    <div style={{ width: "100%", position: "relative", overflow: "hidden" }}>
+    <div style={{ width: "100%", position: "relative" }}>
       {/* Particles Background */}
       <div
         style={{
