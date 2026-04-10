@@ -91,7 +91,20 @@ export const ResumeCard = ({
               }}
               className="mt-2 text-xs sm:text-sm"
             >
-              {description}
+              {description && (
+                description.includes("\n•") || description.startsWith("•") ? (
+                  <ul className="list-none space-y-1 mt-1">
+                    {description.split("\n").filter(Boolean).map((line, i) => (
+                      <li key={i} className="flex gap-2">
+                        <span className="mt-0.5 text-muted-foreground shrink-0">•</span>
+                        <span>{line.replace(/^•\s*/, "")}</span>
+                      </li>
+                    ))}
+                  </ul>
+                ) : (
+                  <p>{description}</p>
+                )
+              )}
               {badges && badges.length > 0 && (
                 <div className="flex flex-wrap gap-1 mt-3">
                   {badges.map((badge, index) => (
