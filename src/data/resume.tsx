@@ -201,6 +201,11 @@ export const DATA = {
       ],
       links: [
         {
+          type: "Website",
+          href: "https://medi-connect-nine-nu.vercel.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
           type: "Source",
           href: "https://github.com/SinghAnsh07/medi-connect",
           icon: <Icons.github className="size-3" />,
