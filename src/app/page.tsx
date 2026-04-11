@@ -110,12 +110,11 @@ export default function Page() {
                 />
               </div>
               <BlurFade delay={BLUR_FADE_DELAY}>
-                <Avatar className="size-40 border">
+                <Avatar className="size-40 border bg-transparent">
                   <AvatarImage
                     alt={DATA.name}
-                    src={theme === "dark" ? "/me black.jpeg" : "/me white.jpeg"}
-                    className="object-cover"
-                    style={{ objectPosition: '50% 10%' }}
+                    src={DATA.avatarUrl}
+                    className="object-contain"
                   />
                   <AvatarFallback>{DATA.initials}</AvatarFallback>
                 </Avatar>

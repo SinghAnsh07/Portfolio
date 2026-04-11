@@ -13,7 +13,7 @@ export const DATA = {
     "CS Undergrad turned Developer. Passionate about Web Development and DSA. I Love building cool stuff and helping others. I like reading interesting stuff about tech every day.",
   summary:
     "As a Computer Science undergraduate, I enjoy building practical applications that solve real problems and are simple for users to interact with. I focus on writing clean, efficient code and continuously improving my problem-solving skills through consistent practice. My interest lies in developing reliable web applications and learning by working on real projects. I’ve solved hundreds of DSA problems on [LeetCode](https://leetcode.com/u/zenansh/)",
-  avatarUrl: "/me.jpeg",
+  avatarUrl: "/me.png",
   skills: [
     "C",
     "Java",
