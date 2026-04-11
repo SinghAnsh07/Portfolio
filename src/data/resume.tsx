@@ -185,7 +185,7 @@ export const DATA = {
     {
       title: "Medi Connect",
       href: "https://medi-connect-nine-nu.vercel.app/",
-      dates: "June 2025 - Ongoing",
+      dates: "sept 2025 - oct 2025",
       active: true,
       description:
         "MediConnect redefines digital healthcare by bridging the gap between patients and medical professionals through a smart, telemedicine-first approach. With a focus on reducing in-person hospital visits and long waiting lines, it enables remote consultations, appointment bookings, and streamlined in-hospital workflows.",
@@ -255,10 +255,10 @@ export const DATA = {
     {
       title: "Safe Lending",
       href: "https://github.com/SinghAnsh07/Safe-Lending",
-      dates: "Feb 2025 - Mar 2025",
+      dates: "Feb 2026 - Mar 2026",
       active: true,
       description:
-        "A Flutter-based Safe Lending application built during the FlutterSprint Hackathon by Google Developer Club to digitize informal peer-to-peer lending. Enables users to record loans, track repayments, and maintain transparent transaction histories — fostering trust and accountability. Shortlisted among the Top 5 teams out of 200+ participants.",
+        "A Flutter-based Safe Lending application built during the FlutterSprint Hackathon by Google Developer Club to digitize informal peer-to-peer lending. Enables users to record loans, track repayments, and maintain transparent transaction histories — fostering trust and accountability. Shortlisted among the Top 10 teams out of 200+ participants.",
       technologies: [
         "Flutter",
         "Dart",
@@ -370,7 +370,7 @@ export const DATA = {
       dates: "FlutterSprint Hackathon · Google Developer Club",
       location: "Chennai, India",
       description:
-        "Built a Flutter-based Safe Lending application during the FlutterSprint Hackathon by Google Developer Club to digitize informal peer-to-peer lending. The app enables users to record loans, track repayments, and maintain transparent transaction histories, fostering trust and accountability. The project was shortlisted among the Top 5 teams out of 200+ participants. ---> Tools Used: Flutter, Dart, Firebase, Firestore SDK, Android SDK, Android Emulator",
+        "Built a Flutter-based Safe Lending application during the FlutterSprint Hackathon by Google Developer Club to digitize informal peer-to-peer lending. The app enables users to record loans, track repayments, and maintain transparent transaction histories, fostering trust and accountability. The project was shortlisted among the Top 10 teams out of 200+ participants. ---> Tools Used: Flutter, Dart, Firebase, Firestore SDK, Android SDK, Android Emulator",
       image: "/fluttersprint.png",
       links: [
         {
