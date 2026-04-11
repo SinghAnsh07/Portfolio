@@ -147,7 +147,7 @@ export const DATA = {
   projects: [
     {
       title: "StudyNotion",
-      href: "https://github.com/SinghAnsh07/StudyNotion-AnshSingh",
+      href: "https://study-notion-ansh-singh.vercel.app/",
       dates: "May 2025 - July 2025",
       active: true,
       description:
@@ -168,6 +168,11 @@ export const DATA = {
       ],
       links: [
         {
+          type: "Website",
+          href: "https://study-notion-ansh-singh.vercel.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
           type: "Source",
           href: "https://github.com/SinghAnsh07/StudyNotion-AnshSingh",
           icon: <Icons.github className="size-3" />,
@@ -179,7 +184,7 @@ export const DATA = {
     },
     {
       title: "Medi Connect",
-      href: "https://github.com/SinghAnsh07/medi-connect",
+      href: "https://medi-connect-nine-nu.vercel.app/",
       dates: "June 2025 - Ongoing",
       active: true,
       description:
