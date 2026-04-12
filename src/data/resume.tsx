@@ -10,7 +10,7 @@ export const DATA = {
   url: "https://portfolio-ansh-singh.vercel.app/",
   location: "Varanasi, UP, India",
   description:
-    "CS Undergrad turned Developer. I geek out over Agentic AI — the reasoning, the planning, the autonomy. I Love building cool stuff and helping others. like reading interesting stuff about tech every day. I build, I help, I read — repeat",
+    "a Full-Stack Developer specializing in building scalable web applications and AI-powered systems. I Love building cool stuff and helping others. like reading about tech every day.",
   summary:
     "As a Computer Science undergraduate, I enjoy building practical applications that solve real problems and are simple for users to interact with. I focus on writing clean, efficient code and continuously improving my problem-solving skills through consistent practice. My interest lies in developing reliable web applications and learning by working on real projects. I’ve solved hundreds of DSA problems on [LeetCode](https://leetcode.com/u/zenansh/)",
   avatarUrl: "/me.png",
