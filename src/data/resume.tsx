@@ -260,7 +260,7 @@ export const DATA = {
       dates: "Feb 2026 - Mar 2026",
       active: true,
       description:
-        "A Flutter-based Safe Lending application built during the FlutterSprint Hackathon by Google Developer Club to digitize informal peer-to-peer lending. Enables users to record loans, track repayments, and maintain transparent transaction histories — fostering trust and accountability. Shortlisted among the Top 10 teams out of 200+ participants.",
+        "A Flutter-based mobile application that digitizes informal peer-to-peer lending. Users can create and manage loan agreements, log repayments in real time, and maintain a complete, transparent transaction history — bringing structure, trust, and accountability to everyday borrowing and lending between individuals.",
       technologies: [
         "Flutter",
         "Dart",
