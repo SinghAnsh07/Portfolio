@@ -41,7 +41,9 @@ export const DATA = {
     "TensorFlow (Basic)",
     "OpenCV",
     "CNNs",
-    "System Design"
+    "System Design",
+    "claude",
+    "huggingface"
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
