@@ -105,7 +105,7 @@ export const DATA = {
       start: "Feb 2026",
       end: "Mar 2026",
       description:
-        "• Designed and developed interactive dashboards to process and visualize large datasets efficiently.\n• Implemented data transformation pipelines using Power Query, improving data quality and consistency.\n• Utilized DAX functions to build optimized calculated fields and improve report performance.\n• Worked with data modeling techniques (relationships, normalization) to simulate backend data handling.\n• Focused on performance optimization of reports by reducing redundant queries and improving load time.",
+        "• Planned and developed interactive dashboards processing large datasets, reducing manual reporting effort by ~40% across 3+ business verticals.\n• Built data transformation pipelines using Power Query, improving data consistency and reducing preprocessing errors by ~30%.\n• Utilized DAX functions to create optimized calculated fields, improving report refresh performance by ~25%.\n• Architected a normalized data layer that streamlined data integration across multiple sources, improving analytical accuracy and report maintainability.\n• Reduced dashboard latency by restructuring data retrieval workflows and eliminating unnecessary query executions across reporting pipelines",
       certificateUrl: "/certifications/internships/power bi intern.png",
     },
   ],
@@ -222,60 +222,99 @@ export const DATA = {
       video:
         "",
     },
-    {
-      title: "MetaVote",
-      href: "https://meta-vote-anshsingh.vercel.app/",
-      dates: "feb 2025 - April 2025",
+    // {
+    //   title: "MetaVote",
+    //   href: "https://meta-vote-anshsingh.vercel.app/",
+    //   dates: "feb 2025 - April 2025",
+    //   active: true,
+    //   description:
+    //     "MetaVote is a blockchain-based voting platform that uses smart contracts and MetaMask integration to enable secure, transparent, and decentralized elections.",
+    //   technologies: [
+    //     "Solidity",
+    //     "Hardhat",
+    //     "React.js",
+    //     "Ethers.js",
+    //     "TailwindCSS",
+    //     "MetaMask",
+    //     "Smart Contracts",
+    //   ],
+    //   links: [
+    //     {
+    //       type: "Website",
+    //       href: "https://meta-vote-anshsingh.vercel.app/",
+    //       icon: <Icons.globe className="size-3" />,
+    //     },
+    //     {
+    //       type: "Source",
+    //       href: "https://github.com/SinghAnsh07/MetaVote",
+    //       icon: <Icons.github className="size-3" />,
+    //     },
+    //   ],
+    //   image: "/metamask.png",
+    //   video:
+    //     "",
+    // },
+    // {
+    //   title: "Safe Lending",
+    //   href: "https://github.com/SinghAnsh07/Safe-Lending",
+    //   dates: "Feb 2026 - Mar 2026",
+    //   active: true,
+    //   description:
+    //     "A Flutter-based mobile application that digitizes informal peer-to-peer lending. Users can create and manage loan agreements, log repayments in real time, and maintain a complete, transparent transaction history — bringing structure, trust, and accountability to everyday borrowing and lending between individuals.",
+    //   technologies: [
+    //     "Flutter",
+    //     "Dart",
+    //     "Firebase",
+    //     "Firestore",
+    //     "Android SDK",
+    //   ],
+    //   links: [
+    //     {
+    //       type: "Source",
+    //       href: "https://github.com/SinghAnsh07/Safe-Lending",
+    //       icon: <Icons.github className="size-3" />,
+    //     },
+    //   ],
+    //   image: "/safe-lending.png",
+    //   video: "",
+    // },
+        {
+      title: "DairyDesk",
+      href: "https://singhansh07.github.io/DairyDesk/",
+      dates: "Apr 2026 - May 2026",
       active: true,
       description:
-        "MetaVote is a blockchain-based voting platform that uses smart contracts and MetaMask integration to enable secure, transparent, and decentralized elections.",
+        "DairyDesk is a high-performance, offline-first dairy ledger management platform designed for rural milk aggregators in India. It replaces manual, error-prone paper registers with a sub-5-second collection entry workflow, local SQLite storage with bidirectional cloud sync, on-device PDF reports, and robust role-based authentication.",
       technologies: [
-        "Solidity",
-        "Hardhat",
-        "React.js",
-        "Ethers.js",
-        "TailwindCSS",
-        "MetaMask",
-        "Smart Contracts",
+        "Flutter",
+        "Dart",
+        "Drift (SQLite)",
+        "flutter_bloc",
+        "Node.js",
+        "Express.js",
+        "TypeScript",
+        "Prisma ORM",
+        "PostgreSQL",
+        "Firebase Auth",
+        "Google Sign-In",
+        "JWT Authentication",
+        "Nodemailer",
+        "Docker",
+        "Google Cloud Run"
       ],
       links: [
         {
           type: "Website",
-          href: "https://meta-vote-anshsingh.vercel.app/",
+          href: "https://app.dairydesk.me/",
           icon: <Icons.globe className="size-3" />,
         },
         {
           type: "Source",
-          href: "https://github.com/SinghAnsh07/MetaVote",
+          href: "https://github.com/SinghAnsh07/dairydesk-site",
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "/metamask.png",
-      video:
-        "",
-    },
-    {
-      title: "Safe Lending",
-      href: "https://github.com/SinghAnsh07/Safe-Lending",
-      dates: "Feb 2026 - Mar 2026",
-      active: true,
-      description:
-        "A Flutter-based mobile application that digitizes informal peer-to-peer lending. Users can create and manage loan agreements, log repayments in real time, and maintain a complete, transparent transaction history — bringing structure, trust, and accountability to everyday borrowing and lending between individuals.",
-      technologies: [
-        "Flutter",
-        "Dart",
-        "Firebase",
-        "Firestore",
-        "Android SDK",
-      ],
-      links: [
-        {
-          type: "Source",
-          href: "https://github.com/SinghAnsh07/Safe-Lending",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "/safe-lending.png",
+      image: "/dairydesk.png", // Replace with your portfolio image path
       video: "",
     },
   ],
