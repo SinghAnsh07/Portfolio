@@ -48,8 +48,8 @@ export const DATA = {
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
     { href: "/blog", icon: NotebookIcon, label: "Things I enjoy" },
-    { href: "/Latest_SDE_CV.pdf", icon: FileText, label: "SDE Resume", external: true },
-    { href: "/Data_science_CV.pdf", icon: FileText, label: "Data science resume", external: true }
+    { href: "/AnshSingh_CV.pdf", icon: FileText, label: "SDE Resume", external: true },
+    { href: "/AnshSingh_DS_CV.pdf", icon: FileText, label: "DS resume", external: true }
 
   ],
   contact: {
@@ -86,7 +86,7 @@ export const DATA = {
         name: "Send Email",
         url: "#snghansh07@gmail.com",
         icon: Icons.email,
-        navbar: false,
+        navbar: true,
       },
     },
   },
@@ -278,7 +278,7 @@ export const DATA = {
     //   image: "/safe-lending.png",
     //   video: "",
     // },
-        {
+    {
       title: "DairyDesk",
       href: "https://singhansh07.github.io/DairyDesk/",
       dates: "Apr 2026 - May 2026",
