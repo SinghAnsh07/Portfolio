@@ -33,11 +33,15 @@ export async function POST(request: Request) {
         // Sort ascending (oldest to newest)
         contributions.sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
 
+        // Filter out future dates so the calendar ends today
+        const todayStr = new Date().toISOString().split('T')[0];
+        const pastContributions = contributions.filter(d => d.date <= todayStr);
+
         // Sum contributions for the last 365 days of actual data
-        const recentContributions = contributions.slice(-365);
+        const recentContributions = pastContributions.slice(-365);
         const totalContributions = recentContributions.reduce((sum, d) => sum + d.count, 0);
 
-        const days = [...contributions];
+        const days = [...pastContributions];
         
         const parseUTCDate = (dateStr: string) => {
           const [year, month, day] = dateStr.split('-').map(Number);
