@@ -245,12 +245,12 @@ export function ProjectCard({
 
       {/* Content Area directly below the wrapper */}
       <div className="mt-4 flex flex-col px-0.5">
-        <div className="flex items-center justify-between">
-          <h3 className="text-[16px] sm:text-[17px] font-bold text-zinc-900 dark:text-zinc-100 tracking-tight leading-none">
+        <div className="flex items-start justify-between gap-x-2">
+          <h3 className="text-[16px] sm:text-[17px] font-bold text-zinc-900 dark:text-zinc-100 tracking-tight leading-snug">
             {title}
           </h3>
           {/* Status Badge */}
-          <span className="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full border border-black/5 dark:border-white/10 text-[11px] font-medium text-zinc-600 dark:text-zinc-400 bg-zinc-50 dark:bg-[#09090b]">
+          <span className="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full border border-black/5 dark:border-white/10 text-[11px] font-medium text-zinc-600 dark:text-zinc-400 bg-zinc-50 dark:bg-[#09090b] shrink-0">
             <span className={cn("w-1.5 h-1.5 rounded-full", statusColor)} />
             {statusLabel}
           </span>

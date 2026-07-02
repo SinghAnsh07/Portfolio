@@ -107,22 +107,22 @@ export default function Page() {
 
         <section id="hero">
           <div className="mx-auto w-full max-w-4xl space-y-8">
-            <div className="gap-2 flex justify-between">
-              <div className="flex-col flex flex-1 space-y-1.5">
+            <div className="flex flex-col-reverse sm:flex-row gap-8 items-center sm:items-start justify-between">
+              <div className="flex-col flex flex-1 space-y-3 text-center sm:text-left items-center sm:items-start">
                 <BlurFadeText
                   delay={BLUR_FADE_DELAY}
-                  className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none"
+                  className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none text-center sm:text-left"
                   yOffset={8}
                   text={`Hi, I'm ${DATA.name.split(" ")[0]} `}
                 />
                 <BlurFadeText
                   delay={BLUR_FADE_DELAY}
-                  className="text-lg italic text-muted-foreground font-serif"
+                  className="text-lg italic text-muted-foreground font-serif text-center sm:text-left"
                   yOffset={8}
                   text='"Premature optimisation is the root of all evil."'
                 />
                 <BlurFadeText
-                  className="max-w-[600px] md:text-xl"
+                  className="max-w-[600px] md:text-xl text-zinc-500 dark:text-zinc-400 text-center sm:text-left"
                   delay={BLUR_FADE_DELAY}
                   text={DATA.description}
                 />
