@@ -30,6 +30,9 @@ export async function POST(request: Request) {
           throw new Error("No contributions found in public API");
         }
 
+        // Sort ascending (oldest to newest)
+        contributions.sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
+
         // Sum contributions for the last 365 days of actual data
         const recentContributions = contributions.slice(-365);
         const totalContributions = recentContributions.reduce((sum, d) => sum + d.count, 0);
