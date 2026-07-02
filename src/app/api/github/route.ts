@@ -30,13 +30,19 @@ export async function POST(request: Request) {
           throw new Error("No contributions found in public API");
         }
 
-        // Sum contributions for the last 365 days
-        const totalContributions = contributions.reduce((sum, d) => sum + d.count, 0);
+        // Sum contributions for the last 365 days of actual data
+        const recentContributions = contributions.slice(-365);
+        const totalContributions = recentContributions.reduce((sum, d) => sum + d.count, 0);
 
         const days = [...contributions];
         
+        const parseUTCDate = (dateStr: string) => {
+          const [year, month, day] = dateStr.split('-').map(Number);
+          return new Date(Date.UTC(year, month - 1, day));
+        };
+
         // Align start to Sunday
-        const firstDate = new Date(days[0].date);
+        const firstDate = parseUTCDate(days[0].date);
         const startDay = firstDate.getUTCDay();
         if (startDay !== 0) {
           for (let i = startDay - 1; i >= 0; i--) {
@@ -51,7 +57,7 @@ export async function POST(request: Request) {
         }
 
         // Align end to Saturday
-        const lastDate = new Date(days[days.length - 1].date);
+        const lastDate = parseUTCDate(days[days.length - 1].date);
         const endDay = lastDate.getUTCDay();
         if (endDay !== 6) {
           for (let i = endDay + 1; i <= 6; i++) {
@@ -65,10 +71,14 @@ export async function POST(request: Request) {
           }
         }
 
-        // Chunk into weeks
+        // Limit to exactly the last 53 weeks (53 * 7 = 371 days)
+        // Since we aligned the end to a Saturday, taking the last 371 days guarantees the start is a Sunday.
+        const finalDays = days.slice(-371);
+
+        // Chunk into weeks (exactly 53 weeks)
         const weeks = [];
-        for (let i = 0; i < days.length; i += 7) {
-          const weekDays = days.slice(i, i + 7).map(d => ({
+        for (let i = 0; i < finalDays.length; i += 7) {
+          const weekDays = finalDays.slice(i, i + 7).map(d => ({
             contributionCount: d.count,
             date: d.date
           }));
@@ -80,8 +90,8 @@ export async function POST(request: Request) {
         const months: { name: string }[] = [];
         let lastMonth = -1;
 
-        for (const day of days) {
-          const dateObj = new Date(day.date);
+        for (const day of finalDays) {
+          const dateObj = parseUTCDate(day.date);
           const monthIndex = dateObj.getUTCMonth();
           if (monthIndex !== lastMonth) {
             months.push({ name: monthNames[monthIndex] });
