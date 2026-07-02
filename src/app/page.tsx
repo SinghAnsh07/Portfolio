@@ -142,7 +142,7 @@ export default function Page() {
         </section>
         <section id="about" className="relative w-full pt-12 scroll-mt-20">
           <div 
-            className="absolute top-0 left-[-100vw] right-[-100vw] h-0 border-t border-black/10 dark:border-white/5 pointer-events-none" 
+            className="absolute top-0 left-[-24px] right-[-24px] lg:left-[-100vw] lg:right-[-100vw] h-0 border-t border-black/10 dark:border-white/5 pointer-events-none" 
             style={{
               maskImage: 'repeating-linear-gradient(to right, black 0, black 1px, transparent 1px, transparent 6px)',
               WebkitMaskImage: 'repeating-linear-gradient(to right, black 0, black 1px, transparent 1px, transparent 6px)'
@@ -162,7 +162,7 @@ export default function Page() {
 
         <section id="work" className="relative w-full pt-12 scroll-mt-20">
           <div 
-            className="absolute top-0 left-[-100vw] right-[-100vw] h-0 border-t border-black/10 dark:border-white/5 pointer-events-none" 
+            className="absolute top-0 left-[-24px] right-[-24px] lg:left-[-100vw] lg:right-[-100vw] h-0 border-t border-black/10 dark:border-white/5 pointer-events-none" 
             style={{
               maskImage: 'repeating-linear-gradient(to right, black 0, black 1px, transparent 1px, transparent 6px)',
               WebkitMaskImage: 'repeating-linear-gradient(to right, black 0, black 1px, transparent 1px, transparent 6px)'
@@ -198,7 +198,7 @@ export default function Page() {
         </section>
         <section id="education" className="relative w-full pt-12 scroll-mt-20">
           <div 
-            className="absolute top-0 left-[-100vw] right-[-100vw] h-0 border-t border-black/10 dark:border-white/5 pointer-events-none" 
+            className="absolute top-0 left-[-24px] right-[-24px] lg:left-[-100vw] lg:right-[-100vw] h-0 border-t border-black/10 dark:border-white/5 pointer-events-none" 
             style={{
               maskImage: 'repeating-linear-gradient(to right, black 0, black 1px, transparent 1px, transparent 6px)',
               WebkitMaskImage: 'repeating-linear-gradient(to right, black 0, black 1px, transparent 1px, transparent 6px)'
@@ -230,7 +230,7 @@ export default function Page() {
         </section>
         <section id="skills" className="relative w-full pt-12 scroll-mt-20">
           <div 
-            className="absolute top-0 left-[-100vw] right-[-100vw] h-0 border-t border-black/10 dark:border-white/5 pointer-events-none" 
+            className="absolute top-0 left-[-24px] right-[-24px] lg:left-[-100vw] lg:right-[-100vw] h-0 border-t border-black/10 dark:border-white/5 pointer-events-none" 
             style={{
               maskImage: 'repeating-linear-gradient(to right, black 0, black 1px, transparent 1px, transparent 6px)',
               WebkitMaskImage: 'repeating-linear-gradient(to right, black 0, black 1px, transparent 1px, transparent 6px)'
@@ -278,7 +278,7 @@ export default function Page() {
         </section>
         <section id="projects" className="relative w-full pt-12 scroll-mt-20">
           <div 
-            className="absolute top-0 left-[-100vw] right-[-100vw] h-0 border-t border-black/10 dark:border-white/5 pointer-events-none" 
+            className="absolute top-0 left-[-24px] right-[-24px] lg:left-[-100vw] lg:right-[-100vw] h-0 border-t border-black/10 dark:border-white/5 pointer-events-none" 
             style={{
               maskImage: 'repeating-linear-gradient(to right, black 0, black 1px, transparent 1px, transparent 6px)',
               WebkitMaskImage: 'repeating-linear-gradient(to right, black 0, black 1px, transparent 1px, transparent 6px)'
@@ -362,7 +362,7 @@ export default function Page() {
         </BlurFade>
         <section id="hackathons" className="relative w-full pt-12 scroll-mt-20">
           <div 
-            className="absolute top-0 left-[-100vw] right-[-100vw] h-0 border-t border-black/10 dark:border-white/5 pointer-events-none" 
+            className="absolute top-0 left-[-24px] right-[-24px] lg:left-[-100vw] lg:right-[-100vw] h-0 border-t border-black/10 dark:border-white/5 pointer-events-none" 
             style={{
               maskImage: 'repeating-linear-gradient(to right, black 0, black 1px, transparent 1px, transparent 6px)',
               WebkitMaskImage: 'repeating-linear-gradient(to right, black 0, black 1px, transparent 1px, transparent 6px)'
@@ -411,7 +411,7 @@ export default function Page() {
         </section>
         <section id="certifications" className="relative w-full pt-12 scroll-mt-20">
           <div 
-            className="absolute top-0 left-[-100vw] right-[-100vw] h-0 border-t border-black/10 dark:border-white/5 pointer-events-none" 
+            className="absolute top-0 left-[-24px] right-[-24px] lg:left-[-100vw] lg:right-[-100vw] h-0 border-t border-black/10 dark:border-white/5 pointer-events-none" 
             style={{
               maskImage: 'repeating-linear-gradient(to right, black 0, black 1px, transparent 1px, transparent 6px)',
               WebkitMaskImage: 'repeating-linear-gradient(to right, black 0, black 1px, transparent 1px, transparent 6px)'
@@ -494,7 +494,7 @@ export default function Page() {
       </section> */}
         <section id="contact" className="relative w-full pt-12 scroll-mt-20">
           <div 
-            className="absolute top-0 left-[-100vw] right-[-100vw] h-0 border-t border-black/10 dark:border-white/5 pointer-events-none" 
+            className="absolute top-0 left-[-24px] right-[-24px] lg:left-[-100vw] lg:right-[-100vw] h-0 border-t border-black/10 dark:border-white/5 pointer-events-none" 
             style={{
               maskImage: 'repeating-linear-gradient(to right, black 0, black 1px, transparent 1px, transparent 6px)',
               WebkitMaskImage: 'repeating-linear-gradient(to right, black 0, black 1px, transparent 1px, transparent 6px)'

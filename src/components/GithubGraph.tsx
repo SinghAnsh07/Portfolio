@@ -195,7 +195,7 @@ export function GithubGraph() {
     >
       {/* Top full-width dashed line */}
       <div
-        className="absolute top-0 left-[-100vw] right-[-100vw] h-0 border-t border-black/30 pointer-events-none dark:border-white/[0.15]"
+        className="absolute top-0 left-[-24px] right-[-24px] lg:left-[-100vw] lg:right-[-100vw] h-0 border-t border-black/30 pointer-events-none dark:border-white/[0.15]"
         style={dashedLineMask}
       />
       <div className="absolute top-0 -left-4 z-20 size-[2px] -translate-x-1/2 -translate-y-1/2 bg-black/50 pointer-events-none dark:bg-white/[0.25]" />
@@ -214,7 +214,7 @@ export function GithubGraph() {
 
         {/* Bottom full-width dashed line under heading */}
         <div
-          className="absolute bottom-0 left-[-100vw] right-[-100vw] h-0 border-b border-black/30 pointer-events-none dark:border-white/[0.15]"
+          className="absolute bottom-0 left-[-24px] right-[-24px] lg:left-[-100vw] lg:right-[-100vw] h-0 border-b border-black/30 pointer-events-none dark:border-white/[0.15]"
           style={dashedLineMask}
         />
         <div className="absolute bottom-0 -left-4 z-20 size-[2px] -translate-x-1/2 translate-y-1/2 bg-black/50 pointer-events-none dark:bg-white/[0.25]" />
@@ -307,7 +307,7 @@ export function GithubGraph() {
 
       {/* Bottom full-width dashed line */}
       <div
-        className="absolute bottom-0 left-[-100vw] right-[-100vw] h-0 border-b border-black/30 pointer-events-none dark:border-white/[0.15]"
+        className="absolute bottom-0 left-[-24px] right-[-24px] lg:left-[-100vw] lg:right-[-100vw] h-0 border-b border-black/30 pointer-events-none dark:border-white/[0.15]"
         style={dashedLineMask}
       />
       <div className="absolute bottom-0 -left-4 z-20 size-[2px] -translate-x-1/2 translate-y-1/2 bg-black/50 pointer-events-none dark:bg-white/[0.25]" />
