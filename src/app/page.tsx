@@ -308,6 +308,7 @@ export default function Page() {
                 ...DATA.miniprojects.map((p) => ({
                   ...p,
                   href: p.links?.[0]?.href || "#",
+                  video: "",
                   isMini: true,
                 })),
               ]
