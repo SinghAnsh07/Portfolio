@@ -27,12 +27,6 @@ interface TooltipState {
 }
 
 export function GithubGraph() {
-  const [weeks, setWeeks] = useState<ContributionWeek[]>([]);
-  const [months, setMonths] = useState<ContributionMonth[]>([]);
-  const [totalContributions, setTotalContributions] = useState(0);
-  const [loading, setLoading] = useState(true);
-  const [tooltip, setTooltip] = useState<TooltipState | null>(null);
-
   const emptyWeeks = useMemo<ContributionWeek[]>(() => {
     const today = new Date();
     const start = new Date(today);
@@ -50,6 +44,12 @@ export function GithubGraph() {
       }),
     }));
   }, []);
+
+  const [weeks, setWeeks] = useState<ContributionWeek[]>(emptyWeeks);
+  const [months, setMonths] = useState<ContributionMonth[]>([]);
+  const [totalContributions, setTotalContributions] = useState(0);
+  const [loading, setLoading] = useState(true);
+  const [tooltip, setTooltip] = useState<TooltipState | null>(null);
 
   useEffect(() => {
     const fetchContributions = async () => {
