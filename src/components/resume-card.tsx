@@ -5,7 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import { Card, CardHeader } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
-import { ChevronRightIcon, Award } from "lucide-react";
+import { ChevronRightIcon, Award, Github, Globe } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 
@@ -78,7 +78,7 @@ export const ResumeCard = ({
             </div>
             {subtitle && <div className="font-sans text-xs">{subtitle}</div>}
           </CardHeader>
-          {(description || badges || certificateUrl) && (
+          {(description || badges || certificateUrl || href) && (
             <motion.div
               initial={{ opacity: 0, height: 0 }}
               animate={{
@@ -118,18 +118,41 @@ export const ResumeCard = ({
                   ))}
                 </div>
               )}
-              {certificateUrl && (
-                <a
-                  href={certificateUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={(e) => e.stopPropagation()}
-                  className="inline-flex items-center gap-1.5 mt-3 px-3 py-1.5 rounded-lg text-xs font-medium bg-foreground text-background hover:opacity-90 transition-opacity"
-                >
-                  <Award className="size-3" />
-                  View Certificate
-                </a>
-              )}
+              <div className="flex flex-wrap gap-2 mt-3">
+                {certificateUrl && (
+                  <a
+                    href={certificateUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={(e) => e.stopPropagation()}
+                    className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium bg-foreground text-background hover:opacity-90 transition-opacity"
+                  >
+                    <Award className="size-3" />
+                    View Certificate
+                  </a>
+                )}
+                {href && (
+                  <a
+                    href={href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={(e) => e.stopPropagation()}
+                    className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium bg-zinc-100 hover:bg-zinc-200 dark:bg-zinc-800 dark:hover:bg-zinc-700 text-zinc-800 dark:text-zinc-200 transition-colors"
+                  >
+                    {href.includes("github.com") ? (
+                      <>
+                        <Github className="size-3" />
+                        GitHub Repo
+                      </>
+                    ) : (
+                      <>
+                        <Globe className="size-3" />
+                        Website
+                      </>
+                    )}
+                  </a>
+                )}
+              </div>
             </motion.div>
           )}
         </div>

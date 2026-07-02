@@ -6,6 +6,8 @@ import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
 import { Inter as FontSans } from "next/font/google";
 import "./globals.css";
+import IndexNav from "@/components/IndexNav";
+import ParticlesBackground from "@/components/ParticlesBackground";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -57,12 +59,31 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body
         className={cn(
-          "min-h-screen bg-background font-sans antialiased max-w-4xl mx-auto pt-20 pb-12 sm:pt-32 sm:pb-24 px-6",
+          "min-h-screen font-sans antialiased max-w-4xl mx-auto pt-6 pb-12 sm:pt-8 sm:pb-24 px-6 overflow-x-hidden relative",
           fontSans.variable
         )}
       >
         <ThemeProvider attribute="class" defaultTheme="light">
           <TooltipProvider delayDuration={0}>
+            {/* Left Vertical Lining */}
+            <div 
+              className="absolute top-0 bottom-0 left-6 w-0 border-r border-black/10 dark:border-white/5 pointer-events-none hidden md:block" 
+              style={{
+                maskImage: 'repeating-linear-gradient(to bottom, black 0, black 1px, transparent 1px, transparent 6px)',
+                WebkitMaskImage: 'repeating-linear-gradient(to bottom, black 0, black 1px, transparent 1px, transparent 6px)'
+              }}
+            />
+            {/* Right Vertical Lining */}
+            <div 
+              className="absolute top-0 bottom-0 right-6 w-0 border-r border-black/10 dark:border-white/5 pointer-events-none hidden md:block" 
+              style={{
+                maskImage: 'repeating-linear-gradient(to bottom, black 0, black 1px, transparent 1px, transparent 6px)',
+                WebkitMaskImage: 'repeating-linear-gradient(to bottom, black 0, black 1px, transparent 1px, transparent 6px)'
+              }}
+            />
+            
+            <ParticlesBackground />
+            <IndexNav />
             {children}
             <Navbar />
           </TooltipProvider>

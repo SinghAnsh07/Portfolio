@@ -38,7 +38,13 @@ export const DATA = {
     "NumPy",
     "Pandas",
     "Matplotlib",
-    "TensorFlow (Basic)",
+    "TensorFlow",
+    "PyTorch",
+    "Scikit-Learn",
+    "CUDA",
+    "Google Colab",
+    "XGBoost",
+    "FastAPI",
     "OpenCV",
     "CNNs",
     "System Design",
@@ -48,7 +54,7 @@ export const DATA = {
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
     { href: "/blog", icon: NotebookIcon, label: "Things I enjoy" },
-    { href: "/AnshSingh_CV.pdf", icon: FileText, label: "SDE Resume", external: true },
+    { href: "/Ansh-Singh-Resume.pdf", icon: FileText, label: "SDE Resume", external: true },
     { href: "/AnshSingh_DS_CV.pdf", icon: FileText, label: "DS resume", external: true }
 
   ],
@@ -95,6 +101,19 @@ export const DATA = {
 
 
   work: [
+    {
+      company: "Centre for Smart Grid Technologies (CSGT), VIT Chennai",
+      href: "https://github.com/SinghAnsh07/brain_tumor_research",
+      badges: ["Deep Learning", "Explainable AI (XAI)", "Grad-CAM", "Computer Vision", "Python", "ResNet50", "DenseNet121", "EfficientNetB5", "Ablation Study"],
+      location: "Chennai, India (Hybrid)",
+      title: "Research Intern",
+      logoUrl: "/college.png",
+      start: "May 2026",
+      end: "Jul 2026",
+      description:
+        "• Developed a multi-class brain tumor classification framework for MRI scan analysis using ResNet50, DenseNet121, and EfficientNetB5 architectures.\n• Conducted a 12-model ablation study comparing Squeeze-and-Excitation (SE), CBAM, and Hybrid attention mechanisms, achieving a peak accuracy of 95.00% with the DenseNet121 + SE-Attention configuration.\n• Integrated Explainable AI (XAI) using Grad-CAM visual saliency maps to identify tumor boundaries and validate model decision pathways for clinical faithfulness.\n• Evaluated explanation faithfulness quantitatively using the ROAD (Remove and Debias) metric to ensure alignment with medical diagnostics.",
+      certificateUrl: "",
+    },
     {
       company: "AICTE",
       href: "",
@@ -185,100 +204,6 @@ export const DATA = {
         "",
     },
     {
-      title: "Medi Connect",
-      href: "https://medi-connect-nine-nu.vercel.app/",
-      dates: "sept 2025 - oct 2025",
-      active: true,
-      description:
-        "MediConnect redefines digital healthcare by bridging the gap between patients and medical professionals through a smart, telemedicine-first approach. With a focus on reducing in-person hospital visits and long waiting lines, it enables remote consultations, appointment bookings, and streamlined in-hospital workflows.",
-      technologies: [
-        "Tailwind CSS",
-        "React.js (Vite)",
-        "Express.js",
-        "Node.js",
-        "MongoDB",
-        "Mongoose",
-        "GSAP & Three.js",
-        "Nodemailer",
-        "Hugging face api",
-        "Cloudinary",
-        "JWT Authentication",
-        "Bcrypt.js",
-        "Socket.IO"
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://medi-connect-nine-nu.vercel.app/",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/SinghAnsh07/medi-connect",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "/mediconnect.png",
-      video:
-        "",
-    },
-    // {
-    //   title: "MetaVote",
-    //   href: "https://meta-vote-anshsingh.vercel.app/",
-    //   dates: "feb 2025 - April 2025",
-    //   active: true,
-    //   description:
-    //     "MetaVote is a blockchain-based voting platform that uses smart contracts and MetaMask integration to enable secure, transparent, and decentralized elections.",
-    //   technologies: [
-    //     "Solidity",
-    //     "Hardhat",
-    //     "React.js",
-    //     "Ethers.js",
-    //     "TailwindCSS",
-    //     "MetaMask",
-    //     "Smart Contracts",
-    //   ],
-    //   links: [
-    //     {
-    //       type: "Website",
-    //       href: "https://meta-vote-anshsingh.vercel.app/",
-    //       icon: <Icons.globe className="size-3" />,
-    //     },
-    //     {
-    //       type: "Source",
-    //       href: "https://github.com/SinghAnsh07/MetaVote",
-    //       icon: <Icons.github className="size-3" />,
-    //     },
-    //   ],
-    //   image: "/metamask.png",
-    //   video:
-    //     "",
-    // },
-    // {
-    //   title: "Safe Lending",
-    //   href: "https://github.com/SinghAnsh07/Safe-Lending",
-    //   dates: "Feb 2026 - Mar 2026",
-    //   active: true,
-    //   description:
-    //     "A Flutter-based mobile application that digitizes informal peer-to-peer lending. Users can create and manage loan agreements, log repayments in real time, and maintain a complete, transparent transaction history — bringing structure, trust, and accountability to everyday borrowing and lending between individuals.",
-    //   technologies: [
-    //     "Flutter",
-    //     "Dart",
-    //     "Firebase",
-    //     "Firestore",
-    //     "Android SDK",
-    //   ],
-    //   links: [
-    //     {
-    //       type: "Source",
-    //       href: "https://github.com/SinghAnsh07/Safe-Lending",
-    //       icon: <Icons.github className="size-3" />,
-    //     },
-    //   ],
-    //   image: "/safe-lending.png",
-    //   video: "",
-    // },
-    {
       title: "DairyDesk",
       href: "https://singhansh07.github.io/DairyDesk/",
       dates: "Apr 2026 - May 2026",
@@ -317,6 +242,101 @@ export const DATA = {
       image: "/dairydesk.png", // Replace with your portfolio image path
       video: "",
     },
+    {
+      title: "Medi Connect",
+      href: "https://medi-connect-nine-nu.vercel.app/",
+      dates: "sept 2025 - oct 2025",
+      active: true,
+      description:
+        "MediConnect redefines digital healthcare by bridging the gap between patients and medical professionals through a smart, telemedicine-first approach. With a focus on reducing in-person hospital visits and long waiting lines, it enables remote consultations, appointment bookings, and streamlined in-hospital workflows.",
+      technologies: [
+        "Tailwind CSS",
+        "React.js (Vite)",
+        "Express.js",
+        "Node.js",
+        "MongoDB",
+        "Mongoose",
+        "GSAP & Three.js",
+        "Nodemailer",
+        "Hugging face api",
+        "Cloudinary",
+        "JWT Authentication",
+        "Bcrypt.js",
+        "Socket.IO"
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://medi-connect-nine-nu.vercel.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/SinghAnsh07/medi-connect",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/mediconnect.png",
+      video:
+        "",
+    },
+    {
+      title: "MetaVote",
+      href: "https://meta-vote-anshsingh.vercel.app/",
+      dates: "feb 2025 - April 2025",
+      active: true,
+      description:
+        "MetaVote is a blockchain-based voting platform that uses smart contracts and MetaMask integration to enable secure, transparent, and decentralized elections.",
+      technologies: [
+        "Solidity",
+        "Hardhat",
+        "React.js",
+        "Ethers.js",
+        "TailwindCSS",
+        "MetaMask",
+        "Smart Contracts",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://meta-vote-anshsingh.vercel.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/SinghAnsh07/MetaVote",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/metamask.png",
+      video:
+        "",
+    },
+    // {
+    //   title: "Safe Lending",
+    //   href: "https://github.com/SinghAnsh07/Safe-Lending",
+    //   dates: "Feb 2026 - Mar 2026",
+    //   active: true,
+    //   description:
+    //     "A Flutter-based mobile application that digitizes informal peer-to-peer lending. Users can create and manage loan agreements, log repayments in real time, and maintain a complete, transparent transaction history — bringing structure, trust, and accountability to everyday borrowing and lending between individuals.",
+    //   technologies: [
+    //     "Flutter",
+    //     "Dart",
+    //     "Firebase",
+    //     "Firestore",
+    //     "Android SDK",
+    //   ],
+    //   links: [
+    //     {
+    //       type: "Source",
+    //       href: "https://github.com/SinghAnsh07/Safe-Lending",
+    //       icon: <Icons.github className="size-3" />,
+    //     },
+    //   ],
+    //   image: "/safe-lending.png",
+    //   video: "",
+    // },
+
   ],
 
 

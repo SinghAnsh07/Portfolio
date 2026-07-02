@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Doto:wght@400;700;900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -70,8 +72,19 @@
     * {
       @apply border-border;
     }
-    body {
+    html {
       @apply bg-background text-foreground;
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
+    }
+    body {
+      @apply text-foreground;
+      background-color: transparent;
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
+    }
+    html::-webkit-scrollbar, body::-webkit-scrollbar {
+      display: none; /* Chrome, Safari and Opera */
     }
   }
 
@@ -141,4 +154,44 @@ code[data-line-numbers-max-digits="2"] > [data-line]::before {
  
 code[data-line-numbers-max-digits="3"] > [data-line]::before {
   width: 3rem;
+}
+
+@layer utilities {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+}
+
+/* Custom Theme View Transitions */
+:root {
+  --expo-out: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+::view-transition-group(root) {
+  animation-timing-function: var(--expo-out);
+}
+::view-transition-old(root),
+.dark::view-transition-old(root) {
+  animation: none;
+  animation-fill-mode: both;
+  z-index: -1;
+}
+::view-transition-new(root) {
+  animation: scale-transition 0.7s;
+  animation-fill-mode: both;
+}
+
+@keyframes scale-transition {
+  from {
+    clip-path: circle(0px at var(--x, 50%) var(--y, 50%));
+  }
+  to {
+    clip-path: circle(150vmax at var(--x, 50%) var(--y, 50%));
+  }
 }
