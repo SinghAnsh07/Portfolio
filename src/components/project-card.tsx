@@ -29,7 +29,7 @@ function getProjectBackgroundImage(title: string): string {
     return "/image copy 5.png";
   }
   if (t.includes("sentiment")) {
-    return "/sentiment_dashboard.png";
+    return "/image copy 4.png";
   }
   if (t.includes("medi connect") || t.includes("mediconnect")) {
     return "/image copy.png";
