@@ -54,7 +54,7 @@ export default function ArtGallerySection({ artworks, blurFadeDelay }: ArtGaller
     }, [artworks]);
 
     return (
-        <section className="w-full py-16 border-t border-border mt-16">
+        <section className="relative w-[calc(100%+48px)] -ml-6 -mr-6 md:left-1/2 md:right-1/2 md:-ml-[50vw] md:-mr-[50vw] md:w-screen md:px-12 lg:px-16 px-6 py-16 border-t border-border mt-16">
             <BlurFade delay={blurFadeDelay * 3}>
                 <div className="text-center mb-16">
                     <h2 className="font-medium text-2xl mb-3 tracking-tighter">
