@@ -147,7 +147,7 @@ function SocialHoverCard({ name, url, icon: Icon }: { name: string; url: string;
         {/* Avatar positioned sticking out from banner */}
         <div className="absolute top-10 left-4 z-20">
           <Avatar className="size-14 border-[3px] border-white dark:border-zinc-950 shadow-md">
-            <AvatarImage src="/me.png" alt={current.title} />
+            <AvatarImage src="/hover_avatar.jpg" alt={current.title} />
             <AvatarFallback>AS</AvatarFallback>
           </Avatar>
         </div>
