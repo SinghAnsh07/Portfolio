@@ -36,15 +36,15 @@ function SocialHoverCard({ name, url, icon: Icon }: { name: string; url: string;
       bannerImage: "/hover_banner.png",
       title: "Ansh Singh",
       handle: "@SinghAnsh07",
-      bio: "Full-Stack Developer | AI Systems | Competitive Programming. Building cool stuff and helping others.",
+      bio: "Full-Stack Developer | AI Systems | Building cool stuff and helping others.",
       verified: true,
       stats: (
         <div className="flex items-center gap-4 text-[12px] text-zinc-500 dark:text-zinc-400 mt-2">
           <span className="flex items-center gap-1">
-            <Users className="size-3.5" /> <strong>46</strong> followers
+            <Users className="size-3.5" /> <strong>3</strong> followers
           </span>
           <span>•</span>
-          <span><strong>88</strong> following</span>
+          <span><strong>4</strong> following</span>
         </div>
       ),
       meta: (
@@ -58,7 +58,7 @@ function SocialHoverCard({ name, url, icon: Icon }: { name: string; url: string;
       bannerImage: "/hover_banner.png",
       title: "Ansh Singh",
       handle: "Software Developer Intern",
-      bio: "Research Intern @ CSGT, VIT Chennai. Focused on building robust full-stack applications and ML pipelines.",
+      bio: "Pre-final year @ VIT Chennai.",
       verified: true,
       stats: (
         <div className="flex items-center gap-1 text-[12px] text-zinc-500 dark:text-zinc-400 mt-2">
@@ -76,7 +76,7 @@ function SocialHoverCard({ name, url, icon: Icon }: { name: string; url: string;
       bannerImage: "/hover_banner.png",
       title: "Ansh Singh",
       handle: "@zenansh",
-      bio: "DSA & Problem Solving portfolio. Active contributor across coding platforms (LeetCode, CodeChef).",
+      bio: "DSA & Problem Solving portfolio.",
       verified: false,
       stats: (
         <div className="flex items-center gap-1.5 text-[12px] text-zinc-500 dark:text-zinc-400 mt-2">
@@ -94,7 +94,7 @@ function SocialHoverCard({ name, url, icon: Icon }: { name: string; url: string;
       bannerImage: "/hover_banner.png",
       title: "Send Email",
       handle: "snghansh07@gmail.com",
-      bio: "Looking for collaboration, internships, or freelance projects? Direct message me anytime!",
+      bio: "Looking for collaboration or freelance projects? Direct message me anytime!",
       verified: false,
       stats: (
         <div className="flex items-center gap-1 text-[12px] text-zinc-500 dark:text-zinc-400 mt-2">
@@ -111,13 +111,15 @@ function SocialHoverCard({ name, url, icon: Icon }: { name: string; url: string;
 
   const current = config[name as keyof typeof config] || config["email"];
 
+  const isMail = url.startsWith("mailto:");
+
   return (
     <HoverCard openDelay={200} closeDelay={150}>
       <HoverCardTrigger asChild>
         <Link
           href={url}
-          target="_blank"
-          rel="noopener noreferrer"
+          target={isMail ? undefined : "_blank"}
+          rel={isMail ? undefined : "noopener noreferrer"}
           className={cn(
             buttonVariants({ variant: "ghost", size: "icon" }),
             "size-12"
@@ -126,7 +128,7 @@ function SocialHoverCard({ name, url, icon: Icon }: { name: string; url: string;
           <Icon className="size-4" />
         </Link>
       </HoverCardTrigger>
-      <HoverCardContent 
+      <HoverCardContent
         className="p-0 overflow-hidden w-80 bg-white/95 dark:bg-zinc-950/95 border border-zinc-200 dark:border-zinc-800 shadow-xl rounded-xl z-50 pointer-events-auto"
         side="top"
         align="center"
@@ -134,16 +136,16 @@ function SocialHoverCard({ name, url, icon: Icon }: { name: string; url: string;
       >
         <div className="relative h-20 w-full overflow-hidden">
           {current.bannerImage ? (
-            <img 
-              src={current.bannerImage} 
-              alt="Profile banner" 
+            <img
+              src={current.bannerImage}
+              alt="Profile banner"
               className="w-full h-full object-cover object-center"
             />
           ) : (
             <div className={cn("w-full h-full", current.banner)} />
           )}
         </div>
-        
+
         {/* Avatar positioned sticking out from banner */}
         <div className="absolute top-10 left-4 z-20">
           <Avatar className="size-14 border-[3px] border-white dark:border-zinc-950 shadow-md">
@@ -151,7 +153,7 @@ function SocialHoverCard({ name, url, icon: Icon }: { name: string; url: string;
             <AvatarFallback>AS</AvatarFallback>
           </Avatar>
         </div>
-        
+
         <div className="pt-8 px-4 pb-4 flex flex-col">
           <div className="flex items-center">
             <h4 className="text-[14px] font-bold text-zinc-900 dark:text-zinc-100 leading-snug">
@@ -162,24 +164,24 @@ function SocialHoverCard({ name, url, icon: Icon }: { name: string; url: string;
           <p className="text-[11px] text-zinc-500 dark:text-zinc-400 font-medium">
             {current.handle}
           </p>
-          
+
           <p className="text-[11px] text-zinc-600 dark:text-zinc-300 mt-2.5 leading-normal">
             {current.bio}
           </p>
-          
+
           {current.stats}
-          
+
           <div className="h-[1px] bg-black/5 dark:bg-white/5 my-3" />
-          
+
           <div className="flex items-center justify-between">
             {current.meta}
-            <Link 
+            <Link
               href={url}
-              target="_blank"
-              rel="noopener noreferrer"
+              target={isMail ? undefined : "_blank"}
+              rel={isMail ? undefined : "noopener noreferrer"}
               className="text-[11px] font-semibold text-zinc-900 dark:text-zinc-100 hover:underline flex items-center gap-0.5"
             >
-              View profile <ArrowUpRight className="size-3" />
+              {isMail ? "Write email" : "View profile"} <ArrowUpRight className="size-3" />
             </Link>
           </div>
         </div>
