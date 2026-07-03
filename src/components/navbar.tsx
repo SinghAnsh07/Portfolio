@@ -33,7 +33,7 @@ function SocialHoverCard({ name, url, icon: Icon }: { name: string; url: string;
   const config = {
     GitHub: {
       banner: "bg-gradient-to-r from-zinc-800 via-zinc-900 to-black",
-      bannerImage: "/samurai-dark.jpg", // reuse header samurai image
+      bannerImage: "/hover_banner.png",
       title: "Ansh Singh",
       handle: "@SinghAnsh07",
       bio: "Full-Stack Developer | AI Systems | Competitive Programming. Building cool stuff and helping others.",
@@ -55,7 +55,7 @@ function SocialHoverCard({ name, url, icon: Icon }: { name: string; url: string;
     },
     LinkedIn: {
       banner: "bg-gradient-to-r from-blue-700 to-indigo-900",
-      bannerImage: "",
+      bannerImage: "/hover_banner.png",
       title: "Ansh Singh",
       handle: "Software Developer Intern",
       bio: "Research Intern @ CSGT, VIT Chennai. Focused on building robust full-stack applications and ML pipelines.",
@@ -73,7 +73,7 @@ function SocialHoverCard({ name, url, icon: Icon }: { name: string; url: string;
     },
     Codolio: {
       banner: "bg-gradient-to-r from-emerald-600 via-teal-900 to-zinc-950",
-      bannerImage: "",
+      bannerImage: "/hover_banner.png",
       title: "Ansh Singh",
       handle: "@zenansh",
       bio: "DSA & Problem Solving portfolio. Active contributor across coding platforms (LeetCode, CodeChef).",
@@ -91,7 +91,7 @@ function SocialHoverCard({ name, url, icon: Icon }: { name: string; url: string;
     },
     email: {
       banner: "bg-gradient-to-r from-violet-600 via-purple-700 to-indigo-800",
-      bannerImage: "",
+      bannerImage: "/hover_banner.png",
       title: "Send Email",
       handle: "snghansh07@gmail.com",
       bio: "Looking for collaboration, internships, or freelance projects? Direct message me anytime!",
