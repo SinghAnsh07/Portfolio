@@ -167,8 +167,36 @@ export const DATA = {
 
   projects: [
     {
+      title: "YouTube Comment Sentiment Analysis",
+      href: "https://github.com/SinghAnsh07/comment_sentiment_analysis",
+      dates: "June 2026 - July 2026",
+      active: true,
+      description:
+        "An end-to-end machine learning system that performs real-time sentiment analysis on YouTube comments. It features an NLP preprocessing pipeline, LightGBM classifier, Flask API server, and an interactive React dashboard with data visualizations (pie charts, word clouds). Implements MLOps best practices including MLflow for experiment tracking and DVC for data/pipeline versioning.",
+      technologies: [
+        "Python",
+        "React",
+        "Flask",
+        "LightGBM",
+        "Scikit-learn",
+        "MLflow",
+        "DVC",
+        "Docker",
+        "NLTK"
+      ],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/SinghAnsh07/comment_sentiment_analysis",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/sentiment_dashboard.png",
+      video: "",
+    },
+    {
       title: "StudyNotion",
-      href: "https://study-notion-ansh-singh.vercel.app/",
+      href: "https://study-notion-frontend-three-kappa.vercel.app/",
       dates: "May 2025 - July 2025",
       active: true,
       description:
@@ -190,7 +218,7 @@ export const DATA = {
       links: [
         {
           type: "Website",
-          href: "https://study-notion-ansh-singh.vercel.app/",
+          href: "https://study-notion-frontend-three-kappa.vercel.app/",
           icon: <Icons.globe className="size-3" />,
         },
         {
@@ -205,7 +233,7 @@ export const DATA = {
     },
     {
       title: "DairyDesk",
-      href: "https://singhansh07.github.io/DairyDesk/",
+      href: "https://app.dairydesk.me/",
       dates: "Apr 2026 - May 2026",
       active: true,
       description:

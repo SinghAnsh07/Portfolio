@@ -28,6 +28,9 @@ function getProjectBackgroundImage(title: string): string {
   if (t.includes("studynotion")) {
     return "/image copy 5.png";
   }
+  if (t.includes("sentiment")) {
+    return "/sentiment_dashboard.png";
+  }
   if (t.includes("medi connect") || t.includes("mediconnect")) {
     return "/image copy.png";
   }
@@ -112,6 +115,11 @@ const KNOWN_SLUGS: Record<string, string> = {
   "numpy": "numpy",
   "opencv": "opencv",
   "claude": "anthropic",
+  "flask": "flask",
+  "mlflow": "mlflow",
+  "dvc": "dvc",
+  "docker": "docker",
+  "lightgbm": "lightgbm",
 };
 
 function getSkillIconSlug(skill: string): string | null {
