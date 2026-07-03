@@ -96,7 +96,7 @@ const KNOWN_SLUGS: Record<string, string> = {
   "dart": "dart",
   "solidity": "solidity",
   "python": "python",
-  "scikit-learn": "scikitlearn",
+  "scikit-learn": "scikit-learn",
   "fastapi": "fastapi",
   "pandas": "pandas",
   "pydantic": "pydantic",
@@ -119,11 +119,9 @@ const KNOWN_SLUGS: Record<string, string> = {
   "mlflow": "mlflow",
   "dvc": "dvc",
   "docker": "docker",
-  "lightgbm": "lightgbm",
   "shadcn": "shadcnui",
   "shadcn ui": "shadcnui",
   "vercel": "vercel",
-  "power bi": "powerbi",
   "hugging face": "huggingface",
 };
 
