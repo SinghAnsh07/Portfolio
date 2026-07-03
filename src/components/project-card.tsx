@@ -120,6 +120,11 @@ const KNOWN_SLUGS: Record<string, string> = {
   "dvc": "dvc",
   "docker": "docker",
   "lightgbm": "lightgbm",
+  "shadcn": "shadcnui",
+  "shadcn ui": "shadcnui",
+  "vercel": "vercel",
+  "power bi": "powerbi",
+  "hugging face": "huggingface",
 };
 
 function getSkillIconSlug(skill: string): string | null {

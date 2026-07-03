@@ -592,6 +592,12 @@ const KNOWN_SLUGS: Record<string, string> = {
   "numpy": "numpy",
   "opencv": "opencv",
   "claude": "anthropic",
+  "shadcn": "shadcnui",
+  "shadcn ui": "shadcnui",
+  "docker": "docker",
+  "vercel": "vercel",
+  "power bi": "powerbi",
+  "hugging face": "huggingface",
 };
 
 function getSkillIconSlug(skill: string): string | null {
