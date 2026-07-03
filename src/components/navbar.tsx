@@ -103,7 +103,7 @@ function SocialHoverCard({ name, url, icon: Icon }: { name: string; url: string;
       ),
       meta: (
         <span className="flex items-center gap-1 text-[11px] text-zinc-400 dark:text-zinc-500">
-          <Calendar className="size-3" /> Fast response (within 24h)
+          <Calendar className="size-3" /> Open for freelance projects
         </span>
       )
     }
