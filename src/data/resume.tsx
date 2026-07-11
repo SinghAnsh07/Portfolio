@@ -13,7 +13,7 @@ export const DATA = {
     "Engineer / Artist. A Full-Stack Developer specializing in building scalable web applications and AI-powered systems. I Love building cool stuff and helping others. I like reading about tech every day.",
   summary:
     "As a Computer Science undergraduate, I enjoy building practical applications that solve real problems and are simple for users to interact with. I focus on writing clean, efficient code and continuously improving my problem-solving skills through consistent practice. My interest lies in developing reliable web applications and learning by working on real projects. I’ve solved hundreds of DSA problems on [LeetCode](https://leetcode.com/u/zenansh/). Off the screen, you'll find me playing chess or sketching.",
-  avatarUrl: "/me.png",
+  avatarUrl: "/me.jpg",
   skills: [
     "C",
     "Java",
@@ -92,7 +92,7 @@ export const DATA = {
         name: "Send Email",
         url: "mailto:snghansh07@gmail.com",
         icon: Icons.email,
-        navbar: true,
+        navbar: false,
       },
     },
   },
