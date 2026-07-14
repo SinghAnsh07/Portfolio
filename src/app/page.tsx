@@ -19,6 +19,7 @@ const Antigravity = dynamic(() => import('@/components/magicui/Antigravity'), { 
 import Image from "next/image";
 import { BannerParticles } from "@/components/BannerParticles";
 import { CurrentTime } from "@/components/CurrentTime";
+import { ViewsCounter } from "@/components/views-counter";
 
 interface ParticlesProps {
   // your props here
@@ -521,6 +522,11 @@ export default function Page() {
                   </Link>{" "}
                   and I&apos;ll respond whenever I can.
                 </p>
+              </div>
+            </BlurFade>
+            <BlurFade delay={BLUR_FADE_DELAY * 17}>
+              <div className="mt-4 flex justify-center w-full">
+                <ViewsCounter />
               </div>
             </BlurFade>
           </div>
