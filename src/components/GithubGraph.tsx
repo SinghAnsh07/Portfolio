@@ -189,6 +189,7 @@ export function GithubGraph() {
 
   return (
     <section
+      id="github"
       className="relative z-10 mt-6 flex flex-col scroll-mt-24 w-full py-12"
       aria-labelledby="github-activity-title"
       aria-describedby="github-activity-summary"

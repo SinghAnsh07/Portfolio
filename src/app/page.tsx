@@ -437,7 +437,7 @@ export default function Page() {
                 </div>
               </div>
             </BlurFade>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
               {DATA.certifications.map((cert, idx) => (
                 <BlurFade key={idx} delay={BLUR_FADE_DELAY * 11 + idx * 0.05}>
 
@@ -445,18 +445,22 @@ export default function Page() {
                     href={cert.link || "#"}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="block rounded-2xl overflow-hidden shadow-md border border-border bg-background hover:shadow-xl transition-all"
+                    className="block rounded-2xl overflow-hidden shadow-md border border-border bg-background hover:shadow-xl transition-all h-full flex flex-col justify-between"
                   >
-                    <img
-                      src={cert.image}
-                      alt={cert.title}
-                      className="w-full object-cover h-48"
-                    />
-                    <span className="block p-4 text-center">
-                      <h3 className="text-md font-semibold">{cert.title}</h3>
-                      <p className="text-sm text-muted-foreground">{cert.issuer}</p>
-                      <p className="text-xs text-muted-foreground mb-2">{cert.date}</p>
-                      <span className="block w-full border rounded-2xl p-2 text-sm mt-2">
+                    <div className="w-full h-48 bg-zinc-100 dark:bg-zinc-900/50 flex items-center justify-center p-2">
+                      <img
+                        src={cert.image}
+                        alt={cert.title}
+                        className="w-full h-full object-contain rounded-lg"
+                      />
+                    </div>
+                    <span className="block p-4 text-center flex-1 flex flex-col justify-between">
+                      <div>
+                        <h3 className="text-md font-semibold line-clamp-2">{cert.title}</h3>
+                        <p className="text-sm text-muted-foreground mt-1">{cert.issuer}</p>
+                        <p className="text-xs text-muted-foreground mb-2">{cert.date}</p>
+                      </div>
+                      <span className="block w-full border rounded-2xl p-2 text-sm mt-2 hover:bg-accent transition-colors">
                         View Certificate
                       </span>
                     </span>

@@ -54,7 +54,7 @@ export const DATA = {
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
     { href: "/blog", icon: NotebookIcon, label: "Things I enjoy" },
-    { href: "/Ansh-Singh-Resume.pdf", icon: FileText, label: "SDE Resume", external: true },
+    { href: "/Ansh_Singh_Resume.pdf", icon: FileText, label: "SDE Resume", external: true },
     { href: "/AnshSingh_DS_CV.pdf", icon: FileText, label: "DS resume", external: true }
 
   ],
@@ -489,6 +489,13 @@ export const DATA = {
 
 
   certifications: [
+    {
+      title: "Google Cybersecurity Professional Certificate",
+      issuer: "Google",
+      date: "July 2025",
+      image: "/certifications/google cyber security.jpg",
+      link: "https://www.coursera.org/account/accomplishments/professional-cert/certificate/RU9V4OCII48J"
+    },
     {
       title: "DevOps Fundamentals",
       issuer: "IBM",

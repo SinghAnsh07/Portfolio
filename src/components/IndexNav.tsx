@@ -7,6 +7,7 @@ const INDEX_ITEMS = [
   { label: "Experience", id: "work" },
   { label: "Skills", id: "skills" },
   { label: "Projects", id: "projects" },
+  { label: "GitHub Activity", id: "github" },
   { label: "Certifications", id: "certifications" },
   { label: "Contact", id: "contact" },
 ];
@@ -89,8 +90,8 @@ export default function IndexNav() {
     <div className="fixed left-[calc(50%-448px-170px)] top-[25vh] z-50 pointer-events-auto hidden xl:block w-[140px] text-left">
       <div className="relative pl-4 py-2">
         {/* Left vertical lining for index */}
-        <div 
-          className="absolute left-0 top-0 bottom-0 w-0 border-r border-black/15 dark:border-white/5 pointer-events-none" 
+        <div
+          className="absolute left-0 top-0 bottom-0 w-0 border-r border-black/15 dark:border-white/5 pointer-events-none"
           style={{
             maskImage: 'repeating-linear-gradient(to bottom, black 0, black 1px, transparent 1px, transparent 6px)',
             WebkitMaskImage: 'repeating-linear-gradient(to bottom, black 0, black 1px, transparent 1px, transparent 6px)'
@@ -107,11 +108,10 @@ export default function IndexNav() {
                 key={item.id}
                 href={`#${item.id}`}
                 onClick={(e) => handleClick(e, item.id)}
-                className={`text-[12px] font-medium tracking-[0.05em] transition-all duration-300 ease-out flex items-center gap-1.5 ${
-                  isActive
+                className={`text-[12px] font-medium tracking-[0.05em] transition-all duration-300 ease-out flex items-center gap-1.5 ${isActive
                     ? "text-zinc-900 dark:text-zinc-100 font-semibold"
                     : "text-zinc-400 dark:text-zinc-600 hover:text-zinc-900 dark:hover:text-zinc-100"
-                }`}
+                  }`}
               >
                 {isActive ? (
                   <span className="text-zinc-900 dark:text-zinc-100 font-bold transition-all duration-300 select-none">
